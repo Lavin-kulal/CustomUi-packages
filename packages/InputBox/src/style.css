@@ -1,0 +1,21 @@
+.input {
+  outline: none;
+  padding: 0.5em;
+  color: #0e244a;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.input:focus {
+  border-color: #2863ff;
+}
+.input::-moz-placeholder {
+  color: #a0a0a0;
+}
+.input::placeholder {
+  color: #a0a0a0;
+}
+.input:disabled {
+  border-color: #eaecef;
+}/*# sourceMappingURL=style.css.map */
