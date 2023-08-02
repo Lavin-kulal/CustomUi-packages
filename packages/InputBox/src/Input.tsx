@@ -20,8 +20,8 @@ export function UpdaptInput({
     <>
       <input
         {...rest}
+        // className={className ?? "input"}
         style={{ width: `${width}px` }}
-        className={className ?? "input"}
         type={type}
       />
     </>
