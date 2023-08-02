@@ -2488,9 +2488,9 @@ var css_248z = ".input {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;
 styleInject(css_248z);
 
 function UpdaptInput(_a) {
-    var type = _a.type, className = _a.className, width = _a.width, rest = __rest(_a, ["type", "className", "width"]);
+    var type = _a.type, width = _a.width, rest = __rest(_a, ["type", "width"]);
     return (reactExports.createElement(reactExports.Fragment, null,
-        reactExports.createElement("input", __assign({ className: className !== null && className !== void 0 ? className : "input", style: { width: "".concat(width, "px") }, type: type }, rest))));
+        reactExports.createElement("input", __assign({ className: "input", style: { width: "".concat(width, "px") }, type: type }, rest))));
 }
 
 exports.UpdaptInput = UpdaptInput;

@@ -7,19 +7,18 @@ export type UpdaptInputProp = React.DetailedHTMLProps<
 > & {
   type: any;
   width: number;
-  className?: string;
 };
 
 export function UpdaptInput({
   type,
-  className,
+
   width,
   ...rest
 }: UpdaptInputProp) {
   return (
     <>
       <input
-        className={className ?? "input"}
+        className="input"
         style={{ width: `${width}px` }}
         type={type}
         {...rest}
