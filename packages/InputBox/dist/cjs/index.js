@@ -2459,12 +2459,38 @@ function requireReact_development () {
 
 var reactExports = react.exports;
 
+function styleInject(css, ref) {
+  if (ref === void 0) ref = {};
+  var insertAt = ref.insertAt;
+  if (!css || typeof document === 'undefined') {
+    return;
+  }
+  var head = document.head || document.getElementsByTagName('head')[0];
+  var style = document.createElement('style');
+  style.type = 'text/css';
+  if (insertAt === 'top') {
+    if (head.firstChild) {
+      head.insertBefore(style, head.firstChild);
+    } else {
+      head.appendChild(style);
+    }
+  } else {
+    head.appendChild(style);
+  }
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var css_248z = ".input {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border: 1px solid #dee2e6;\n  border-radius: 4px;\n  font-size: 14px;\n  font-weight: 400;\n}\n.input:focus {\n  border-color: #2863ff;\n}\n.input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.input::placeholder {\n  color: #a0a0a0;\n}\n.input:disabled {\n  border-color: #eaecef;\n}";
+styleInject(css_248z);
+
 function UpdaptInput(_a) {
-    var type = _a.type; _a.className; var width = _a.width, rest = __rest(_a, ["type", "className", "width"]);
+    var type = _a.type, className = _a.className, width = _a.width, rest = __rest(_a, ["type", "className", "width"]);
     return (reactExports.createElement(reactExports.Fragment, null,
-        reactExports.createElement("input", __assign({ 
-            // className={className ?? "input"}
-            style: { width: "".concat(width, "px") }, type: type }, rest))));
+        reactExports.createElement("input", __assign({ className: className !== null && className !== void 0 ? className : "input", style: { width: "".concat(width, "px") }, type: type }, rest))));
 }
 
 exports.UpdaptInput = UpdaptInput;

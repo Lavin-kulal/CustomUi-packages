@@ -1,5 +1,5 @@
 import * as React from "react";
-// import "./style.css";
+import "./style.css";
 
 export type UpdaptInputProp = React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,
@@ -19,7 +19,7 @@ export function UpdaptInput({
   return (
     <>
       <input
-        // className={className ?? "input"}
+        className={className ?? "input"}
         style={{ width: `${width}px` }}
         type={type}
         {...rest}
