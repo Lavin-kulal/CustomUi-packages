@@ -2484,15 +2484,13 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt-input-filled {\n  outline: none;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n  background: #ffffff;\n  outline: none;\n  padding: 5px;\n  border: 1px solid #d6d6d6;\n}\n.updapt-input-filled.error {\n  border: 1px solid red;\n}\n.updapt-input-filled.no-error {\n  border: 1px solid #d6d6d6;\n}\n.updapt-input-filled:focus {\n  border-color: #2863ff;\n}\n.updapt-input-filled::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-input-filled::placeholder {\n  color: #a0a0a0;\n}\n.updapt-input-filled:disabled {\n  border-color: #eaecef;\n}\n\n.updapt-input-not-filled {\n  padding: 5px;\n  background: #efeffb;\n  border-radius: 5px;\n  outline: none;\n  border: 1px solid #d6d6d6;\n}";
+var css_248z = ".updapt {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n}\n.updapt.input-error {\n  border: 1px solid red;\n}\n.updapt.input-no-error {\n  border: 1px solid #dee2e6;\n}\n.updapt:focus {\n  border-color: #2863ff;\n}\n.updapt::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt::placeholder {\n  color: #a0a0a0;\n}\n.updapt:disabled {\n  border-color: #eaecef;\n}";
 styleInject(css_248z);
 
 function UpdaptInput(_a) {
-    var type = _a.type, isError = _a.isError, width = _a.width, value = _a.value, rest = __rest(_a, ["type", "isError", "width", "value"]);
+    var type = _a.type, isError = _a.isError, width = _a.width, rest = __rest(_a, ["type", "isError", "width"]);
     return (reactExports.createElement(reactExports.Fragment, null,
-        reactExports.createElement("input", __assign({ className: value || isError
-                ? "updapt-input-filled ".concat(isError ? "error" : "no-error")
-                : "updapt-input-not-filled", style: { width: "".concat(width, "px") }, type: type }, rest))));
+        reactExports.createElement("input", __assign({ className: "updapt ".concat(isError ? "input-error" : "input-error"), style: { width: "".concat(width, "px") }, type: type }, rest))));
 }
 
 exports.UpdaptInput = UpdaptInput;

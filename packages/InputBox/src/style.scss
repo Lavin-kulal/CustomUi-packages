@@ -1,18 +1,15 @@
-.updapt-input-filled {
+.updapt {
   outline: none;
+  padding: 0.5em;
   color: #0e244a;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 400;
-  background: #ffffff;
-  outline: none;
-  padding: 5px;
-  border: 1px solid #d6d6d6;
-  &.error {
+  &.input-error {
     border: 1px solid red;
   }
-  &.no-error {
-    border: 1px solid #d6d6d6;
+  &.input-no-error {
+    border: 1px solid #dee2e6;
   }
   &:focus {
     border-color: #2863ff;
@@ -23,11 +20,4 @@
   &:disabled {
     border-color: #eaecef;
   }
-}
-.updapt-input-not-filled {
-  padding: 5px;
-  background: #efeffb;
-  border-radius: 5px;
-  outline: none;
-  border: 1px solid #d6d6d6;
 }
