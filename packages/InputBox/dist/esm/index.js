@@ -2482,13 +2482,13 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".input {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border: 1px solid #dee2e6;\n  border-radius: 4px;\n  font-size: 14px;\n  font-weight: 400;\n}\n.input:focus {\n  border-color: #2863ff;\n}\n.input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.input::placeholder {\n  color: #a0a0a0;\n}\n.input:disabled {\n  border-color: #eaecef;\n}";
+var css_248z = ".updapt {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 4px;\n  font-size: 14px;\n  font-weight: 400;\n}\n.updapt.input-error {\n  border: 1px solid #33383e;\n}\n.updapt.input-no-error {\n  border: 1px solid red;\n}\n.updapt:focus {\n  border-color: #2863ff;\n}\n.updapt::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt::placeholder {\n  color: #a0a0a0;\n}\n.updapt:disabled {\n  border-color: #eaecef;\n}";
 styleInject(css_248z);
 
 function UpdaptInput(_a) {
-    var type = _a.type, width = _a.width, rest = __rest(_a, ["type", "width"]);
+    var type = _a.type, isError = _a.isError, width = _a.width, rest = __rest(_a, ["type", "isError", "width"]);
     return (reactExports.createElement(reactExports.Fragment, null,
-        reactExports.createElement("input", __assign({ className: "input", style: { width: "".concat(width, "px") }, type: type }, rest))));
+        reactExports.createElement("input", __assign({ className: "updapt ".concat(isError ? "input-error" : "input-no-error"), style: { width: "".concat(width, "px") }, type: type }, rest))));
 }
 
 export { UpdaptInput };

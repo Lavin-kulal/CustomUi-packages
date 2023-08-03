@@ -1,11 +1,16 @@
-.input {
+.updapt {
   outline: none;
   padding: 0.5em;
   color: #0e244a;
-  border: 1px solid #dee2e6;
   border-radius: 4px;
   font-size: 14px;
   font-weight: 400;
+  &.input-error {
+    border: 1px solid #33383e;
+  }
+  &.input-no-error {
+    border: 1px solid red;
+  }
   &:focus {
     border-color: #2863ff;
   }

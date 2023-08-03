@@ -1,21 +1,26 @@
-.input {
+.updapt {
   outline: none;
   padding: 0.5em;
   color: #0e244a;
-  border: 1px solid #dee2e6;
   border-radius: 4px;
   font-size: 14px;
   font-weight: 400;
 }
-.input:focus {
+.updapt.input-error {
+  border: 1px solid #33383e;
+}
+.updapt.input-no-error {
+  border: 1px solid red;
+}
+.updapt:focus {
   border-color: #2863ff;
 }
-.input::-moz-placeholder {
+.updapt::-moz-placeholder {
   color: #a0a0a0;
 }
-.input::placeholder {
+.updapt::placeholder {
   color: #a0a0a0;
 }
-.input:disabled {
+.updapt:disabled {
   border-color: #eaecef;
 }/*# sourceMappingURL=style.css.map */
