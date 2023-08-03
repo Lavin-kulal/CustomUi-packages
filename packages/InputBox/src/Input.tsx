@@ -8,18 +8,24 @@ export type UpdaptInputProp = React.DetailedHTMLProps<
   type: any;
   width: number;
   isError?: boolean;
+  value?: string;
 };
 
 export function UpdaptInput({
   type,
   isError,
   width,
+  value,
   ...rest
 }: UpdaptInputProp) {
   return (
     <>
       <input
-        className={`updapt ${isError ? "input-error" : "input-error"}`}
+        className={
+          value || isError
+            ? `updapt-input-filled ${isError ? "error" : "no-error"}`
+            : "updapt-input-not-filled"
+        }
         style={{ width: `${width}px` }}
         type={type}
         {...rest}

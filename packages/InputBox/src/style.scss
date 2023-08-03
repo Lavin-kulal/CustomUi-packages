@@ -1,14 +1,16 @@
-.updapt {
+.updapt-input-filled {
   outline: none;
   padding: 0.5em;
   color: #0e244a;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 400;
-  &.input-error {
+  border: 1px solid #dee2e6;
+
+  &.error {
     border: 1px solid red;
   }
-  &.input-no-error {
+  &.no-error {
     border: 1px solid #dee2e6;
   }
   &:focus {
@@ -20,4 +22,11 @@
   &:disabled {
     border-color: #eaecef;
   }
+}
+.updapt-input-not-filled {
+  outline: none;
+  padding: 0.5em;
+  color: #0e244a;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
 }
