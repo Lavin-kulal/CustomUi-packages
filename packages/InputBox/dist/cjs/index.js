@@ -2484,7 +2484,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n}\n.updapt.input-error {\n  border: 1px solid red;\n}\n.updapt.input-no-error {\n  border: 1px solid #33383e;\n}\n.updapt:focus {\n  border-color: #2863ff;\n}\n.updapt::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt::placeholder {\n  color: #a0a0a0;\n}\n.updapt:disabled {\n  border-color: #eaecef;\n}";
+var css_248z = ".updapt {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n}\n.updapt.input-error {\n  border: 1px solid red;\n}\n.updapt.input-no-error {\n  border: 1px solid #dee2e6;\n}\n.updapt:focus {\n  border-color: #2863ff;\n}\n.updapt::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt::placeholder {\n  color: #a0a0a0;\n}\n.updapt:disabled {\n  border-color: #eaecef;\n}";
 styleInject(css_248z);
 
 function UpdaptInput(_a) {
