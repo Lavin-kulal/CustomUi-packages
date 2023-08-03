@@ -6,10 +6,10 @@
   font-size: 14px;
   font-weight: 400;
   &.input-error {
-    border: 1px solid #33383e;
+    border: 1px solid red;
   }
   &.input-no-error {
-    border: 1px solid red;
+    border: 1px solid #33383e;
   }
   &:focus {
     border-color: #2863ff;

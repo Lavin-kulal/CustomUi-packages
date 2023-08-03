@@ -7,10 +7,10 @@
   font-weight: 400;
 }
 .updapt.input-error {
-  border: 1px solid #33383e;
+  border: 1px solid red;
 }
 .updapt.input-no-error {
-  border: 1px solid red;
+  border: 1px solid #33383e;
 }
 .updapt:focus {
   border-color: #2863ff;
