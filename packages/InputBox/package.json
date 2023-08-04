@@ -14,6 +14,11 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Lavin-kulal/newfolder.git"
+  },
+  "homepage": "git@github.com:Lavin-kulal/newfolder.git",
   "dependencies": {
     "@babel/preset-react": "^7.22.5",
     "@rollup/plugin-babel": "^6.0.3",
