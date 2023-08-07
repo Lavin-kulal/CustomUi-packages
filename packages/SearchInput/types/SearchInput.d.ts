@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./styles.css";
-export type UpdaptSearchInputProp = {
+export type UpdaptSearchProps = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> & {
     width: number;
 };
-export declare function UpdaptSearchInput({ width }: UpdaptSearchInputProp): React.JSX.Element;
+export declare function UpdaptSearchInput({ width }: UpdaptSearchProps): React.JSX.Element;
