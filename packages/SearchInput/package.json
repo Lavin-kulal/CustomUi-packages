@@ -1,6 +1,6 @@
 {
   "name": "searchinput",
-  "version": "1.0.0",
+  "version": "0.0.19",
   "description": "",
   "main": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -25,7 +25,7 @@
     "@rollup/plugin-commonjs": "^25.0.3",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@types/react": "^18.2.18",
-    "input-lerna-component": "*",
+    "input-lerna-component": "^0.0.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.1",
