@@ -6,7 +6,6 @@
   font-size: 14px;
   font-weight: 400;
   border: 1px solid #dee2e6;
-  position: relative;
 }
 .updapt-search-input:focus {
   border-color: #2863ff;
