@@ -2443,7 +2443,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".input-with-image {\n  border: 1px solid #ccc;\n  border-radius: 4px;\n  padding: 0 10px;\n  outline: none;\n  font-size: 14px;\n  color: #333;\n  background-color: #fff;\n}\n.input-with-image::-moz-placeholder {\n  color: #999;\n}\n.input-with-image::placeholder {\n  color: #999;\n}\n.input-with-image .updpat-search-icon-image {\n  width: 20px;\n  height: 20px;\n  margin-right: 10px;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n\n.input-with-image img {\n  width: 100%;\n  height: 100%;\n}";
+var css_248z = ".updapt-search-bar-cover {\n  color: #a0a0a0;\n  font-size: 14px;\n  display: flex;\n  align-items: center;\n  opacity: 1;\n}\n.updapt-search-bar-cover .updpat-search-icon-image {\n  height: 16px;\n  width: 12%;\n}\n.updapt-search-bar-cover .updapt-input-with-image {\n  width: 100%;\n  height: 100%;\n  outline: none !important;\n  border: none !important;\n  border-radius: 5px;\n}";
 styleInject(css_248z);
 
 var images = {
@@ -2452,9 +2452,9 @@ var images = {
 
 function UpdaptSearchInput(_a) {
     var width = _a.width;
-    return (reactExports.createElement(reactExports.Fragment, null,
-        reactExports.createElement("input", { type: "search", className: "input-with-image", style: { width: "".concat(width, "px") } }),
-        reactExports.createElement("img", { src: images.SearchIcon, alt: "Search Icon", className: "updpat-search-icon-image" })));
+    return (reactExports.createElement("div", { className: "updapt-search-bar-cover", style: { width: "".concat(width, "px") } },
+        reactExports.createElement("img", { src: images.SearchIcon, alt: "Search Icon", className: "updpat-search-icon-image" }),
+        reactExports.createElement("input", { type: "search", className: "updapt-input-with-image" })));
 }
 
 export { UpdaptSearchInput };
