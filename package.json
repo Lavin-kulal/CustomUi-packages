@@ -5,9 +5,11 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^7.1.4"
+    "lerna": "^7.1.4",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "build": "lerna run tsc"
+    "build": "lerna run tsc",
+    "start": "react-scripts start"
   }
 }

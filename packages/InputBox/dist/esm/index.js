@@ -2487,9 +2487,17 @@ styleInject(css_248z);
 
 function UpdaptInput(_a) {
     var type = _a.type, isError = _a.isError, width = _a.width, value = _a.value, rest = __rest(_a, ["type", "isError", "width", "value"]);
+    function isErrorClassName(isError) {
+        if (isError) {
+            return "error";
+        }
+        else {
+            return "no-error";
+        }
+    }
     return (reactExports.createElement(reactExports.Fragment, null,
         reactExports.createElement("input", __assign({ className: value || isError
-                ? "updapt-input-filled ".concat(isError ? "error" : "no-error")
+                ? "updapt-input-filled ".concat(isErrorClassName(isError))
                 : "updapt-input-not-filled", style: { width: "".concat(width, "px") }, type: type }, rest))));
 }
 

@@ -18,12 +18,19 @@ export function UpdaptInput({
   value,
   ...rest
 }: UpdaptInputProp) {
+  function isErrorClassName(isError: boolean): string {
+    if (isError) {
+      return "error";
+    } else {
+      return "no-error";
+    }
+  }
   return (
     <>
       <input
         className={
           value || isError
-            ? `updapt-input-filled ${isError ? "error" : "no-error"}`
+            ? `updapt-input-filled ${isErrorClassName(isError!)}`
             : "updapt-input-not-filled"
         }
         style={{ width: `${width}px` }}

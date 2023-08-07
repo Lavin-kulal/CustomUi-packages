@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "tsc": "tsc",
-    "build": "rimraf dist && rollup -c"
+    "build": "rimraf dist && rollup -c",
+    "start": "react-scripts start"
   },
   "type": "module",
   "publishConfig": {
