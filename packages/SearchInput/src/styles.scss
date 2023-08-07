@@ -8,7 +8,9 @@
   border: 1px solid #dee2e6;
   padding: 0.5em;
   &:focus {
-    border-color: #2863ff;
+    // border-color: #2863ff;
+    outline: none;
+    outline-color: #2863ff;
   }
   &::placeholder {
     color: #a0a0a0;

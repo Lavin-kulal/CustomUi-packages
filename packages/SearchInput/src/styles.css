@@ -9,7 +9,8 @@
   padding: 0.5em;
 }
 .updapt-search-bar-cover:focus {
-  border-color: #2863ff;
+  outline: none;
+  outline-color: #2863ff;
 }
 .updapt-search-bar-cover::-moz-placeholder {
   color: #a0a0a0;
