@@ -6,6 +6,7 @@
   opacity: 1;
   border-radius: 5px;
   border: 1px solid #dee2e6;
+  padding: 0.5em;
 }
 .updapt-search-bar-cover:focus {
   border-color: #2863ff;
