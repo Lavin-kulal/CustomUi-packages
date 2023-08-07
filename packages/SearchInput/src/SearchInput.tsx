@@ -10,7 +10,7 @@ export type UpdaptSearchProps = Omit<
   "disabled"
 > & {
   width: number;
-  disabled: boolean;
+  disabled?: boolean;
 };
 
 export function UpdaptSearchInput({
