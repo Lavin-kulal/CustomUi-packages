@@ -1,14 +1,13 @@
 .updapt-search-input {
   outline: none;
-  padding: 0.5em;
+  padding: 0.5em 0.5em 0.5em 2.2em;
   color: #0e244a;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 400;
   border: 1px solid #dee2e6;
-  background: transparent url("../Assests/Images/searchIcon.svg") no-repeat
-    center;
-  opacity: 0.7;
+  position: relative;
+
   &:focus {
     border-color: #2863ff;
   }
@@ -22,4 +21,7 @@
 .updpat-search-icon-image {
   width: 16px;
   height: 16px;
+  position: absolute;
+  top: 120px;
+  left: 16px;
 }
