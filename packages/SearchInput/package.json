@@ -1,5 +1,5 @@
 {
-  "name": "searchinput",
+  "name": "search-lerna-component",
   "version": "0.0.19",
   "description": "",
   "main": "dist/esm/index.js",
@@ -37,5 +37,6 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.2",
     "@types/node": "^20.4.8"
-  }
+  },
+  "gitHead": "1be2502e2fafc64546859622d8c55855b22a39a3"
 }
