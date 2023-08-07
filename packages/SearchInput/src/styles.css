@@ -21,8 +21,8 @@
   border-color: #eaecef;
 }
 .updapt-search-bar-cover .updpat-search-icon-image {
-  height: 16px;
-  width: 12%;
+  height: calc(1600px / var(--parent-height));
+  width: calc(12% * var(--parent-width) / 100);
 }
 .updapt-search-bar-cover .updapt-input-with-image {
   width: 100%;
