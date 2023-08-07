@@ -2443,7 +2443,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt-search-bar-cover {\n  color: #0e244a;\n  font-size: 14px;\n  display: flex;\n  align-items: center;\n  opacity: 1;\n  border-radius: 5px;\n  border: 1px solid #dee2e6;\n  padding: 0.5em;\n}\n.updapt-search-bar-cover:focus {\n  border-color: #2863ff;\n}\n.updapt-search-bar-cover::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-bar-cover::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-bar-cover:disabled {\n  border-color: #eaecef;\n}\n.updapt-search-bar-cover .updpat-search-icon-image {\n  height: calc(1600px / var(--parent-height));\n  width: calc(12% * var(--parent-width) / 100);\n}\n.updapt-search-bar-cover .updapt-input-with-image {\n  width: 100%;\n  height: 100%;\n  font-size: 14px;\n  font-weight: 400;\n  outline: none !important;\n  border: none !important;\n  color: #0e244a;\n}";
+var css_248z = ".updapt-search-bar-cover {\n  color: #0e244a;\n  font-size: 14px;\n  display: flex;\n  align-items: center;\n  opacity: 1;\n  border-radius: 5px;\n  border: 1px solid #dee2e6;\n  padding: 0.5em;\n}\n.updapt-search-bar-cover:focus {\n  border-color: #2863ff;\n}\n.updapt-search-bar-cover::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-bar-cover::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-bar-cover:disabled {\n  border-color: #eaecef;\n}\n.updapt-search-bar-cover .updpat-search-icon-image {\n  height: 16px;\n  width: 16px;\n}\n.updapt-search-bar-cover .updapt-input-with-image {\n  width: 100%;\n  height: 100%;\n  font-size: 14px;\n  font-weight: 400;\n  outline: none !important;\n  border: none !important;\n  color: #0e244a;\n}";
 styleInject(css_248z);
 
 var images = {
