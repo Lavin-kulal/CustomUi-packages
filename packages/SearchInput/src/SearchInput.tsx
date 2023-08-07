@@ -10,9 +10,14 @@ export type UpdaptSearchProps = Omit<
   "disabled"
 > & {
   width: number;
+  disabled: boolean;
 };
 
-export function UpdaptSearchInput({ width, ...rest }: UpdaptSearchProps) {
+export function UpdaptSearchInput({
+  width,
+  disabled,
+  ...rest
+}: UpdaptSearchProps) {
   return (
     <>
       <img
@@ -24,6 +29,7 @@ export function UpdaptSearchInput({ width, ...rest }: UpdaptSearchProps) {
         type="search"
         className="updapt-search-input"
         style={{ width: `${width}px` }}
+        disabled={disabled}
         {...rest}
       />
     </>

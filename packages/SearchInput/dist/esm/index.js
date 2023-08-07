@@ -2490,10 +2490,10 @@ var images = {
 };
 
 function UpdaptSearchInput(_a) {
-    var width = _a.width, rest = __rest(_a, ["width"]);
+    var width = _a.width, disabled = _a.disabled, rest = __rest(_a, ["width", "disabled"]);
     return (reactExports.createElement(reactExports.Fragment, null,
         reactExports.createElement("img", { src: images.SearchIcon, alt: "Search Icon", className: "updpat-search-icon-image" }),
-        reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", style: { width: "".concat(width, "px") } }, rest))));
+        reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", style: { width: "".concat(width, "px") }, disabled: disabled }, rest))));
 }
 
 export { UpdaptSearchInput };
