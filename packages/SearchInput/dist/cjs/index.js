@@ -2484,7 +2484,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt-search-input {\n  outline: none;\n  padding: 0.5em 0.5em 0.5em 2.2em;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n}\n.updapt-search-input:focus {\n  border-color: #2863ff;\n}\n.updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input:disabled {\n  border-color: #eaecef;\n}\n\n.updpat-search-icon-image {\n  width: 16px;\n  height: 16px;\n  position: absolute;\n  top: 120px;\n  left: 16px;\n}";
+var css_248z = ".updapt-search-input {\n  outline: none;\n  padding: 0.5em 0.5em 0.5em 2.2em;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n}\n.updapt-search-input:focus {\n  border-color: #2863ff;\n}\n.updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input:disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n}\n\n.updpat-search-icon-image {\n  width: 16px;\n  height: 16px;\n  position: absolute;\n  top: 120px;\n  left: 16px;\n}";
 styleInject(css_248z);
 
 var images = {
@@ -2492,7 +2492,7 @@ var images = {
 };
 
 function UpdaptSearchInput(_a) {
-    var width = _a.width; _a.disabled; var rest = __rest(_a, ["width", "disabled"]);
+    var width = _a.width, rest = __rest(_a, ["width"]);
     return (reactExports.createElement(reactExports.Fragment, null,
         reactExports.createElement("img", { src: images.SearchIcon, alt: "Search Icon", className: "updpat-search-icon-image" }),
         reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", style: { width: "".concat(width, "px") } }, rest))));
