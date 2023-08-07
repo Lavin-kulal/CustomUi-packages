@@ -17,8 +17,8 @@
     border-color: #eaecef;
   }
   .updpat-search-icon-image {
-    height: 16px;
-    width: 12%;
+    height: calc(16px * 100 / 100%);
+    width: calc(12% * 100 / 100%);
   }
   .updapt-input-with-image {
     width: 100%;
