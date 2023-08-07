@@ -2445,7 +2445,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt-search-bar-cover {\n  color: #0e244a;\n  font-size: 14px;\n  display: flex;\n  align-items: center;\n  opacity: 1;\n  border-radius: 5px;\n  border: 1px solid #dee2e6;\n  padding: 0.5em;\n}\n.updapt-search-bar-cover:focus {\n  outline: none;\n  outline-color: #2863ff;\n}\n.updapt-search-bar-cover::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-bar-cover::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-bar-cover:disabled {\n  border-color: #eaecef;\n}\n.updapt-search-bar-cover .updpat-search-icon-image {\n  height: 16px;\n  width: 16px;\n}\n.updapt-search-bar-cover .updapt-input-with-image {\n  width: 100%;\n  height: 100%;\n  font-size: 14px;\n  font-weight: 400;\n  outline: none !important;\n  border: none !important;\n  color: #0e244a;\n}";
+var css_248z = ".updapt-search-input {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  background: transparent url(\"../Assests/Images/searchIcon.svg\") no-repeat center;\n  opacity: 0.7;\n}\n.updapt-search-input:focus {\n  border-color: #2863ff;\n}\n.updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input:disabled {\n  border-color: #eaecef;\n}\n\n.updpat-search-icon-image {\n  width: 16px;\n  height: 16px;\n}";
 styleInject(css_248z);
 
 var images = {
@@ -2454,9 +2454,9 @@ var images = {
 
 function UpdaptSearchInput(_a) {
     var width = _a.width;
-    return (reactExports.createElement("div", { className: "updapt-search-bar-cover", style: { width: "".concat(width, "px") } },
+    return (reactExports.createElement(reactExports.Fragment, null,
         reactExports.createElement("img", { src: images.SearchIcon, alt: "Search Icon", className: "updpat-search-icon-image" }),
-        reactExports.createElement("input", { type: "search", className: "updapt-input-with-image" })));
+        reactExports.createElement("input", { type: "search", className: "updapt-search-input", style: { width: "".concat(width, "px") } })));
 }
 
 exports.UpdaptSearchInput = UpdaptSearchInput;
