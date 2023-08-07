@@ -1,0 +1,41 @@
+{
+  "name": "searchinput",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "rimraf dist && rollup -c"
+  },
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Lavin-kulal/newfolder.git"
+  },
+  "homepage": "git@github.com:Lavin-kulal/newfolder.git",
+  "dependencies": {
+    "@babel/preset-react": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@types/react": "^18.2.18",
+    "input-lerna-component": "*",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.27.2",
+    "rollup-plugin-dts": "^5.3.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.4.8"
+  }
+}
