@@ -35,4 +35,7 @@
   border: 1px solid #dee2e6;
   font-size: 14px;
   font-weight: 400;
+}
+.updapt-input-not-filled:focus {
+  border-color: #2863ff;
 }/*# sourceMappingURL=style.css.map */
