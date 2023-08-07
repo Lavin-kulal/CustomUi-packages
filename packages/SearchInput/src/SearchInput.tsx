@@ -11,17 +11,13 @@ export type UpdaptSearchProps = React.DetailedHTMLProps<
 
 export function UpdaptSearchInput({ width }: UpdaptSearchProps) {
   return (
-    <>
-      <input
-        type="search"
-        className="input-with-image"
-        style={{ width: `${width}px` }}
-      />
+    <div className="updapt-search-bar-cover" style={{ width: `${width}px` }}>
       <img
         src={images.SearchIcon}
         alt="Search Icon"
         className="updpat-search-icon-image"
       />
-    </>
+      <input type="search" className="updapt-input-with-image" />
+    </div>
   );
 }
