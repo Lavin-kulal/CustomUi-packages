@@ -9,7 +9,11 @@ export type UpdaptSearchProps = React.DetailedHTMLProps<
   width: number;
 };
 
-export function UpdaptSearchInput({ width }: UpdaptSearchProps) {
+export function UpdaptSearchInput({
+  width,
+  disabled,
+  ...rest
+}: UpdaptSearchProps) {
   return (
     <>
       <img
@@ -21,6 +25,7 @@ export function UpdaptSearchInput({ width }: UpdaptSearchProps) {
         type="search"
         className="updapt-search-input"
         style={{ width: `${width}px` }}
+        {...rest}
       />
     </>
   );
