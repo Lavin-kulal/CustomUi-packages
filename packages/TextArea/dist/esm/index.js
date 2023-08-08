@@ -2485,7 +2485,7 @@ function styleInject(css, ref) {
 var css_248z = ".updapt-text-area-filled {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  resize: none;\n}\n.updapt-text-area-filled.error {\n  border: 1px solid #de4841;\n}\n.updapt-text-area-filled.no-error {\n  border: 1px solid #dee2e6;\n}\n.updapt-text-area-filled:focus {\n  border-color: #2863ff;\n}\n.updapt-text-area-filled::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-text-area-filled::placeholder {\n  color: #a0a0a0;\n}\n.updapt-text-area-filled:disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n}\n\n.updapt-text-area-not-filled {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 5px;\n  border: 1px solid #dee2e6;\n  font-size: 14px;\n  font-weight: 400;\n  resize: none;\n}\n.updapt-text-area-not-filled:focus {\n  border-color: #2863ff;\n}";
 styleInject(css_248z);
 
-function UpdaptInput(_a) {
+function UpdaptTextArea(_a) {
     var width = _a.width, isError = _a.isError, value = _a.value, rest = __rest(_a, ["width", "isError", "value"]);
     function isErrorClassName(isError) {
         if (isError) {
@@ -2501,5 +2501,5 @@ function UpdaptInput(_a) {
                 : "updapt-text-area-not-filled", style: { width: "".concat(width, "px") }, value: value }, rest))));
 }
 
-export { UpdaptInput };
+export { UpdaptTextArea };
 //# sourceMappingURL=index.js.map

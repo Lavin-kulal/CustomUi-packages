@@ -5,6 +5,6 @@ type UpdaptTextAreaProp = React.DetailedHTMLProps<React.TextareaHTMLAttributes<H
     isError?: boolean;
     value?: string;
 };
-declare function UpdaptInput({ width, isError, value, ...rest }: UpdaptTextAreaProp): React.JSX.Element;
+declare function UpdaptTextArea({ width, isError, value, ...rest }: UpdaptTextAreaProp): React.JSX.Element;
 
-export { UpdaptInput, UpdaptTextAreaProp };
+export { UpdaptTextArea, UpdaptTextAreaProp };

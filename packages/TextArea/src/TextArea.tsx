@@ -10,7 +10,7 @@ export type UpdaptTextAreaProp = React.DetailedHTMLProps<
   value?: string;
 };
 
-export function UpdaptInput({
+export function UpdaptTextArea({
   width,
   isError,
   value,
