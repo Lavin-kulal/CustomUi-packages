@@ -20,11 +20,11 @@ export function UpdaptSearchInput({
 }: UpdaptSearchProps) {
   return (
     <>
-      <img
+      {/* <img
         src={images.SearchIcon}
         alt="Search Icon"
         className="updpat-search-icon-image"
-      />
+      /> */}
       <input
         type="search"
         className="updapt-search-input"
