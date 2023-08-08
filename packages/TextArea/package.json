@@ -9,8 +9,16 @@
     "build": "rimraf dist && rollup -c"
   },
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Lavin-kulal/newfolder.git"
+  },
+  "homepage": "git@github.com:Lavin-kulal/newfolder.git",
   "dependencies": {
     "@babel/preset-react": "^7.22.5",
     "@rollup/plugin-babel": "^6.0.3",
@@ -27,5 +35,5 @@
     "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^5.1.6"
   },
-  "gitHead": "8ae2e2b6580bc95d373731a6804797edadfdcbf7"
+  "gitHead": "1f6946b3eba7036af6a62b236a10085d52f94089"
 }
