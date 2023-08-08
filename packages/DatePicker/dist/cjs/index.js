@@ -20536,9 +20536,10 @@ var css_248z = "@charset \"UTF-8\";\n.react-datepicker__year-read-view--down-arr
 styleInject(css_248z);
 
 function UpdaptDatePicker(_a) {
-    var onChange = _a.onChange;
+    _a.width;
+    var _b = reactExports.useState(null), selectedDate = _b[0], setSelectedDate = _b[1];
     return (reactExports.createElement(reactExports.Fragment, null,
-        reactExports.createElement(Xt, { className: "updapt-date-picker", onChange: onChange })));
+        reactExports.createElement(Xt, { className: "updapt-date-picker", selected: selectedDate, onChange: function (date) { return setSelectedDate(date); }, dateFormat: "dd/MM/yyyy" })));
 }
 
 exports.UpdaptDatePicker = UpdaptDatePicker;
