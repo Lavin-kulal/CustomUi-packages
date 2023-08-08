@@ -7,7 +7,7 @@
   border: 1px solid #dee2e6;
   width: 100%;
   padding: 9px 4px 9px 40px;
-  background: transparent url("../../Assests/Images/searchIcon.svg") no-repeat 13px center;
+  background: transparent url("../Assests/Images/searchIcon.svg") no-repeat 13px center;
 }
 .updapt-search-input:focus {
   border-color: #2863ff;
@@ -21,12 +21,4 @@
 .updapt-search-input:disabled {
   border-color: #eaecef;
   background-color: #eaecef;
-}
-
-.updpat-search-icon-image {
-  width: 16px;
-  height: 16px;
-  position: absolute;
-  top: 120px;
-  left: 16px;
 }/*# sourceMappingURL=styles.css.map */

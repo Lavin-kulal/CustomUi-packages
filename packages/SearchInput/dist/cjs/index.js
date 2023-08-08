@@ -2484,7 +2484,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt-search-input {\n  outline: none;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  width: 100%;\n  padding: 9px 4px 9px 40px;\n  background: transparent url(\"../../Assests/Images/searchIcon.svg\") no-repeat 13px center;\n}\n.updapt-search-input:focus {\n  border-color: #2863ff;\n}\n.updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input:disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n}\n\n.updpat-search-icon-image {\n  width: 16px;\n  height: 16px;\n  position: absolute;\n  top: 120px;\n  left: 16px;\n}";
+var css_248z = ".updapt-search-input {\n  outline: none;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  width: 100%;\n  padding: 9px 4px 9px 40px;\n  background: transparent url(\"../Assests/Images/searchIcon.svg\") no-repeat 13px center;\n}\n.updapt-search-input:focus {\n  border-color: #2863ff;\n}\n.updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input:disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n}";
 styleInject(css_248z);
 
 function UpdaptSearchInput(_a) {
