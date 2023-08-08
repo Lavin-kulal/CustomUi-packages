@@ -1,0 +1,40 @@
+.updapt-text-area-filled {
+  outline: none;
+  padding: 0.5em;
+  color: #0e244a;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #dee2e6;
+  resize: none;
+  &.error {
+    border: 1px solid #de4841;
+  }
+  &.no-error {
+    border: 1px solid #dee2e6;
+  }
+  &:focus {
+    border-color: #2863ff;
+  }
+  &::placeholder {
+    color: #a0a0a0;
+  }
+  &:disabled {
+    border-color: #eaecef;
+    background-color: #eaecef;
+  }
+}
+.updapt-text-area-not-filled {
+  outline: none;
+  padding: 0.5em;
+  color: #0e244a;
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+  font-size: 14px;
+  font-weight: 400;
+  resize: none;
+
+  &:focus {
+    border-color: #2863ff;
+  }
+}

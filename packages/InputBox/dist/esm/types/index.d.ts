@@ -1,1 +1,1 @@
-export * from "./Input";
+export { UpdaptInput } from "./Input";

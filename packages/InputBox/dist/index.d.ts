@@ -8,4 +8,4 @@ type UpdaptInputProp = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInp
 };
 declare function UpdaptInput({ type, isError, width, value, ...rest }: UpdaptInputProp): React.JSX.Element;
 
-export { UpdaptInput, UpdaptInputProp };
+export { UpdaptInput };

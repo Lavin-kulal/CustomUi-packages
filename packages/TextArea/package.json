@@ -1,6 +1,6 @@
 {
-  "name": "input-lerna-component",
-  "version": "0.0.38",
+  "name": "textarea-lerna-component",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -9,16 +9,8 @@
     "build": "rimraf dist && rollup -c"
   },
   "type": "module",
-  "publishConfig": {
-    "access": "public"
-  },
   "author": "",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:Lavin-kulal/newfolder.git"
-  },
-  "homepage": "git@github.com:Lavin-kulal/newfolder.git",
   "dependencies": {
     "@babel/preset-react": "^7.22.5",
     "@rollup/plugin-babel": "^6.0.3",
@@ -26,14 +18,13 @@
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-replace": "^5.0.2",
     "@rollup/plugin-typescript": "^11.1.2",
-    "@types/react": "^18.2.18",
+    "@types/react": "^18.2.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.1",
-    "rollup": "^3.27.0",
+    "rollup": "^3.27.2",
     "rollup-plugin-dts": "^5.3.1",
     "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^5.1.6"
-  },
-  "gitHead": "1be2502e2fafc64546859622d8c55855b22a39a3"
+  }
 }
