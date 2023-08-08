@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./styles.css";
+import images from "./Common/imageVaribale";
 
 export type UpdaptSearchProps = Omit<
   React.DetailedHTMLProps<
@@ -19,10 +20,13 @@ export function UpdaptSearchInput({
 }: UpdaptSearchProps) {
   return (
     <>
+      <img className="image" src={images.searchIcon} alt="n" />
       <input
         type="search"
         className="updapt-search-input"
-        style={{ width: `${width}px` }}
+        style={{
+          width: `${width}px`,
+        }}
         disabled={disabled}
         {...rest}
       />
