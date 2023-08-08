@@ -2490,7 +2490,7 @@ function UpdaptSearchInput(_a) {
     return (reactExports.createElement(reactExports.Fragment, null,
         reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", style: {
                 width: "".concat(width, "px"),
-                background: "transparent\n        url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width=".concat(imageWidth, " height=").concat(imageHeight, " class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E\")\n        no-repeat 13px center"),
+                background: "transparent\n        url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width=".concat(imageWidth, " height=").concat(imageHeight, " class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E)\n        no-repeat 13px center"),
             }, disabled: disabled }, rest))));
 }
 
