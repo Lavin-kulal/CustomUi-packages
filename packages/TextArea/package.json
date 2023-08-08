@@ -1,5 +1,5 @@
 {
-  "name": "text-area-lerna-component",
+  "name": "text-area-lerna-componentts",
   "version": "0.0.42",
   "description": "",
   "main": "dist/esm/index.js",
@@ -35,5 +35,5 @@
     "rollup-plugin-postcss": "^4.0.2",
     "typescript": "^5.1.6"
   },
-  "gitHead": "1f6946b3eba7036af6a62b236a10085d52f94089"
+  "gitHead": "2dcd408efc61fda1a8825205e85f2b197ff1ad30"
 }
