@@ -2487,16 +2487,12 @@ function styleInject(css, ref) {
 var css_248z = ".updapt-search-input {\n  outline: none;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  width: 100%;\n  padding: 9px 4px 9px 40px;\n  background: transparent url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E\") no-repeat 13px center;\n  opacity: 0.6;\n}\n.updapt-search-input:focus {\n  border-color: #2863ff;\n}\n.updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input:disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n}";
 styleInject(css_248z);
 
-var images = {
-    searchIcon: require("./Assets/Images/searchIcon.svg"),
-};
-
 function UpdaptSearchInput(_a) {
-    var width = _a.width, disabled = _a.disabled, rest = __rest(_a, ["width", "disabled"]);
+    var width = _a.width, disabled = _a.disabled, imageWidth = _a.imageWidth, imageHeight = _a.imageHeight, rest = __rest(_a, ["width", "disabled", "imageWidth", "imageHeight"]);
     return (reactExports.createElement(reactExports.Fragment, null,
-        reactExports.createElement("img", { className: "image", src: images.searchIcon, alt: "n" }),
         reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", style: {
                 width: "".concat(width, "px"),
+                background: "transparent\n        url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width=".concat(imageWidth, " height=").concat(imageHeight, " class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E\")\n        no-repeat 13px center;"),
             }, disabled: disabled }, rest))));
 }
 
