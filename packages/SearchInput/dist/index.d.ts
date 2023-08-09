@@ -5,7 +5,7 @@ type UpdaptSearchProps = Omit<React.DetailedHTMLProps<React.InputHTMLAttributes<
     disabled?: boolean;
     imageWidth?: number;
     imageHeight?: number;
-    urlPosition?: string;
+    urlPosition?: number;
 };
 declare function UpdaptSearchInput({ width, disabled, imageWidth, imageHeight, urlPosition, ...rest }: UpdaptSearchProps): React.JSX.Element;
 
