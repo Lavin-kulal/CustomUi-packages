@@ -2495,6 +2495,7 @@ function UpdaptSearchInput(_a) {
             backgroundImage: "url('".concat(svgDataURI, "')"),
             backgroundRepeat: "no-repeat",
             backgroundPosition: "".concat(urlPosition, "px center"),
+            backgroundColor: "transparent",
         }, disabled: disabled }, rest)));
 }
 
