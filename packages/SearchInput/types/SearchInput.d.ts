@@ -5,5 +5,6 @@ export type UpdaptSearchProps = Omit<React.DetailedHTMLProps<React.InputHTMLAttr
     disabled?: boolean;
     imageWidth?: number;
     imageHeight?: number;
+    urlPosition?: string;
 };
-export declare function UpdaptSearchInput({ width, disabled, imageWidth, imageHeight, ...rest }: UpdaptSearchProps): React.JSX.Element;
+export declare function UpdaptSearchInput({ width, disabled, imageWidth, imageHeight, urlPosition, ...rest }: UpdaptSearchProps): React.JSX.Element;

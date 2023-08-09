@@ -2484,15 +2484,16 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt-search-input {\n  outline: none;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  width: 100%;\n  padding: 9px 4px 9px 40px;\n  background: transparent url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E\") no-repeat 13px center;\n  opacity: 0.6;\n}\n.updapt-search-input:focus {\n  border-color: #2863ff;\n}\n.updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input:disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n}";
+var css_248z = ".updapt-search-input {\n  outline: none;\n  color: #0e244a;\n  border-radius: 5px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  width: 100%;\n  padding: 9px 4px 9px 40px;\n  opacity: 0.6;\n}\n.updapt-search-input:focus {\n  border-color: #2863ff;\n}\n.updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-search-input:disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n}";
 styleInject(css_248z);
 
 function UpdaptSearchInput(_a) {
-    var width = _a.width, disabled = _a.disabled, imageWidth = _a.imageWidth, imageHeight = _a.imageHeight, rest = __rest(_a, ["width", "disabled", "imageWidth", "imageHeight"]);
+    var width = _a.width, disabled = _a.disabled, imageWidth = _a.imageWidth, imageHeight = _a.imageHeight, urlPosition = _a.urlPosition, rest = __rest(_a, ["width", "disabled", "imageWidth", "imageHeight", "urlPosition"]);
+    var svgDataURI = "data:image/svg+xml,".concat(encodeURIComponent("<svg xmlns=\"http://www.w3.org/2000/svg\" width=".concat(imageWidth, " height=").concat(imageHeight, " viewBox=\"0 0 31.613 31.184\">\n   <path id=\"Icon_ionic-ios-search\" data-name=\"Icon ionic-ios-search\" d=\"M35.742,33.419,26.95,24.667a12.291,12.291,0,0,0,2.758-7.753A12.511,12.511,0,0,0,17.1,4.493,12.518,12.518,0,0,0,4.5,16.922,12.511,12.511,0,0,0,17.1,29.343a12.669,12.669,0,0,0,7.944-2.776l8.735,8.695a1.367,1.367,0,0,0,1.91.049A1.33,1.33,0,0,0,35.742,33.419ZM17.1,26.672a9.9,9.9,0,0,1-7-2.858,9.646,9.646,0,0,1,0-13.785,10,10,0,0,1,14,0,9.646,9.646,0,0,1,0,13.785A9.9,9.9,0,0,1,17.1,26.672Z\" transform=\"translate(-4.5 -4.492)\" fill=\"#a0a0a0\"/>\n </svg>\n ")));
     return (reactExports.createElement(reactExports.Fragment, null,
         reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", style: {
                 width: "".concat(width, "px"),
-                background: "transparent\n        url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width=".concat(imageWidth, " height=").concat(imageHeight, " class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E)\n        no-repeat 13px center"),
+                background: "url(".concat(svgDataURI, ") no-repeat ").concat(urlPosition, "px center"),
             }, disabled: disabled }, rest))));
 }
 
