@@ -29,6 +29,7 @@ export function UpdaptSearchInput({
  </svg>
  `
   )}`;
+
   return (
     <>
       <input
@@ -36,7 +37,9 @@ export function UpdaptSearchInput({
         className="updapt-search-input"
         style={{
           width: `${width}px`,
-          background: `url(${svgDataURI}) no-repeat ${urlPosition}px center`,
+          backgroundImage: `url(${svgDataURI})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: `${urlPosition}px center`,
         }}
         disabled={disabled}
         {...rest}

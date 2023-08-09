@@ -2493,7 +2493,9 @@ function UpdaptSearchInput(_a) {
     return (reactExports.createElement(reactExports.Fragment, null,
         reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", style: {
                 width: "".concat(width, "px"),
-                background: "url(".concat(svgDataURI, ") no-repeat ").concat(urlPosition, "px center"),
+                backgroundImage: "url(".concat(svgDataURI, ")"),
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "".concat(urlPosition, "px center"),
             }, disabled: disabled }, rest))));
 }
 
