@@ -1,8 +1,5 @@
 import * as React from 'react';
 
-type UpdaptDatePickerProps = {
-    width: number;
-};
-declare function UpdaptDatePicker({ width }: UpdaptDatePickerProps): React.JSX.Element;
+declare function UpdaptDatePicker(): React.JSX.Element;
 
-export { UpdaptDatePicker, UpdaptDatePickerProps };
+export { UpdaptDatePicker };
