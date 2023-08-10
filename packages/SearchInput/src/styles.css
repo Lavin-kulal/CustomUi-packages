@@ -1,11 +1,9 @@
 .updapt-form-search-input-cover {
   display: flex;
   align-items: center;
-  display: flex;
-  align-items: center;
   padding: 9px 9px;
   border: 1px solid #dee2e6;
-  border-radius: 5px;
+  border-radius: 4px;
   gap: 2px;
 }
 .updapt-form-search-input-cover.disabled {
@@ -39,6 +37,7 @@
 }
 .updapt-form-search-input-cover .updapt-search-input:disabled {
   background-color: #eaecef;
+  color: #a0a0a0;
 }
 
 .updapt-form-search-input-cover:focus-within {
