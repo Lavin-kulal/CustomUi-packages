@@ -7,6 +7,13 @@
   border: 1px solid #dee2e6;
   border-radius: 5px;
   gap: 2px;
+  &.disabled {
+    border-color: #eaecef;
+    opacity: 0.6;
+  }
+  &.not-disabled {
+    border-color: #dee2e6;
+  }
   .updapt-input-search-img {
     width: 16px;
     height: 16px;
@@ -24,8 +31,8 @@
       color: #a0a0a0;
     }
     &:disabled {
-      border-color: #eaecef;
       background-color: #eaecef;
+      opacity: 0.6;
     }
   }
 }

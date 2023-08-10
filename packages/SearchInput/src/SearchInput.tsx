@@ -22,7 +22,9 @@ export function UpdaptSearchInput({
       style={{
         width: `${width}px`,
       }}
-      className="updapt-form-search-input-cover"
+      className={`updapt-form-search-input-cover ${
+        disabled ? "disabled" : "not-disabled"
+      }`}
     >
       <img className="updapt-input-search-img" src={images.searchIcon} />
       <input

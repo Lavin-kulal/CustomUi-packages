@@ -2482,7 +2482,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt-form-search-input-cover {\n  display: flex;\n  align-items: center;\n  display: flex;\n  align-items: center;\n  padding: 9px 9px;\n  border: 1px solid #dee2e6;\n  border-radius: 5px;\n  gap: 2px;\n}\n.updapt-form-search-input-cover .updapt-input-search-img {\n  width: 16px;\n  height: 16px;\n  opacity: 0.6;\n}\n.updapt-form-search-input-cover .updapt-search-input {\n  outline: none;\n  border: none;\n  width: 100%;\n  max-height: 100%;\n  font-size: 14px;\n  font-weight: 400;\n  color: #0e244a;\n}\n.updapt-form-search-input-cover .updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-form-search-input-cover .updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-form-search-input-cover .updapt-search-input:disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n}\n\n.updapt-form-search-input-cover:focus-within {\n  border-color: #2863ff;\n}";
+var css_248z = ".updapt-form-search-input-cover {\n  display: flex;\n  align-items: center;\n  display: flex;\n  align-items: center;\n  padding: 9px 9px;\n  border: 1px solid #dee2e6;\n  border-radius: 5px;\n  gap: 2px;\n}\n.updapt-form-search-input-cover.disabled {\n  border-color: #eaecef;\n  opacity: 0.6;\n}\n.updapt-form-search-input-cover.not-disabled {\n  border-color: #dee2e6;\n}\n.updapt-form-search-input-cover .updapt-input-search-img {\n  width: 16px;\n  height: 16px;\n  opacity: 0.6;\n}\n.updapt-form-search-input-cover .updapt-search-input {\n  outline: none;\n  border: none;\n  width: 100%;\n  max-height: 100%;\n  font-size: 14px;\n  font-weight: 400;\n  color: #0e244a;\n}\n.updapt-form-search-input-cover .updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-form-search-input-cover .updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-form-search-input-cover .updapt-search-input:disabled {\n  background-color: #eaecef;\n  opacity: 0.6;\n}\n\n.updapt-form-search-input-cover:focus-within {\n  border-color: #2863ff;\n}";
 styleInject(css_248z);
 
 var images = {
@@ -2493,7 +2493,7 @@ function UpdaptSearchInput(_a) {
     var width = _a.width, disabled = _a.disabled, rest = __rest(_a, ["width", "disabled"]);
     return (reactExports.createElement("form", { style: {
             width: "".concat(width, "px"),
-        }, className: "updapt-form-search-input-cover" },
+        }, className: "updapt-form-search-input-cover ".concat(disabled ? "disabled" : "not-disabled") },
         reactExports.createElement("img", { className: "updapt-input-search-img", src: images.searchIcon }),
         reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", disabled: disabled }, rest))));
 }

@@ -8,6 +8,13 @@
   border-radius: 5px;
   gap: 2px;
 }
+.updapt-form-search-input-cover.disabled {
+  border-color: #eaecef;
+  opacity: 0.6;
+}
+.updapt-form-search-input-cover.not-disabled {
+  border-color: #dee2e6;
+}
 .updapt-form-search-input-cover .updapt-input-search-img {
   width: 16px;
   height: 16px;
@@ -29,8 +36,8 @@
   color: #a0a0a0;
 }
 .updapt-form-search-input-cover .updapt-search-input:disabled {
-  border-color: #eaecef;
   background-color: #eaecef;
+  opacity: 0.6;
 }
 
 .updapt-form-search-input-cover:focus-within {
