@@ -4,6 +4,6 @@ export type UpdaptInputProp = React.DetailedHTMLProps<React.InputHTMLAttributes<
     type: any;
     width: number;
     isError?: boolean;
-    value?: string;
+    value?: any;
 };
 export declare function UpdaptInput({ type, isError, width, value, ...rest }: UpdaptInputProp): React.JSX.Element;
