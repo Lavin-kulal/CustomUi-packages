@@ -20,9 +20,10 @@
     color: #a0a0a0;
   }
   &:disabled {
-    color: #a0a0a0;
     border-color: #eaecef;
     background-color: #eaecef;
+    opacity: 1;
+    pointer-events: none;
   }
 }
 .updapt-input-not-filled {

@@ -30,6 +30,8 @@
 .updapt-text-area-filled:disabled {
   border-color: #eaecef;
   background-color: #eaecef;
+  opacity: 1;
+  pointer-events: none;
 }
 
 .updapt-text-area-not-filled {
