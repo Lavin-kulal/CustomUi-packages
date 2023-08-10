@@ -9,7 +9,9 @@
   gap: 2px;
   &.disabled {
     border-color: #eaecef;
-    opacity: 0.6;
+    background-color: #eaecef;
+    opacity: 1;
+    pointer-events: none;
   }
   &.not-disabled {
     border-color: #dee2e6;
@@ -29,6 +31,9 @@
     color: #0e244a;
     &::placeholder {
       color: #a0a0a0;
+    }
+    &:disabled {
+      background-color: #eaecef;
     }
   }
 }

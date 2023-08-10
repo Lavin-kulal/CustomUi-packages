@@ -10,7 +10,9 @@
 }
 .updapt-form-search-input-cover.disabled {
   border-color: #eaecef;
-  opacity: 0.6;
+  background-color: #eaecef;
+  opacity: 1;
+  pointer-events: none;
 }
 .updapt-form-search-input-cover.not-disabled {
   border-color: #dee2e6;
@@ -34,6 +36,9 @@
 }
 .updapt-form-search-input-cover .updapt-search-input::placeholder {
   color: #a0a0a0;
+}
+.updapt-form-search-input-cover .updapt-search-input:disabled {
+  background-color: #eaecef;
 }
 
 .updapt-form-search-input-cover:focus-within {
