@@ -35,10 +35,6 @@
 .updapt-form-search-input-cover .updapt-search-input::placeholder {
   color: #a0a0a0;
 }
-.updapt-form-search-input-cover .updapt-search-input:disabled {
-  background-color: #eaecef;
-  opacity: 0.6;
-}
 
 .updapt-form-search-input-cover:focus-within {
   border-color: #2863ff;
