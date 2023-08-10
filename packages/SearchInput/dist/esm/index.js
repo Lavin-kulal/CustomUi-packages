@@ -2490,12 +2490,12 @@ var images = {
 };
 
 function UpdaptSearchInput(_a) {
-    var width = _a.width, disabled = _a.disabled, rest = __rest(_a, ["width", "disabled"]);
+    var width = _a.width, disabled = _a.disabled, value = _a.value, rest = __rest(_a, ["width", "disabled", "value"]);
     return (reactExports.createElement("form", { style: {
             width: "".concat(width, "px"),
         }, className: "updapt-form-search-input-cover ".concat(disabled ? "disabled" : "not-disabled") },
         reactExports.createElement("img", { className: "updapt-input-search-img", src: images.searchIcon }),
-        reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", disabled: disabled }, rest))));
+        reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", disabled: disabled, value: value }, rest))));
 }
 
 export { UpdaptSearchInput };

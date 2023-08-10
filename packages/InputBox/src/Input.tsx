@@ -8,7 +8,7 @@ export type UpdaptInputProp = React.DetailedHTMLProps<
   type: any;
   width: number;
   isError?: boolean;
-  value?: string;
+  value?: any;
 };
 
 export function UpdaptInput({
@@ -35,6 +35,7 @@ export function UpdaptInput({
         }
         style={{ width: `${width}px` }}
         type={type}
+        value={value}
         {...rest}
       />
     </>

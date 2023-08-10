@@ -7,7 +7,7 @@ export type UpdaptTextAreaProp = React.DetailedHTMLProps<
 > & {
   width: number;
   isError?: boolean;
-  value?: string;
+  value?: any;
 };
 
 export function UpdaptTextArea({

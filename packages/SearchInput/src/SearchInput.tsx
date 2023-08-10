@@ -11,10 +11,12 @@ export type UpdaptSearchProps = Omit<
 > & {
   width: number;
   disabled?: boolean;
+  value: any;
 };
 export function UpdaptSearchInput({
   width,
   disabled,
+  value,
   ...rest
 }: UpdaptSearchProps) {
   return (
@@ -31,6 +33,7 @@ export function UpdaptSearchInput({
         type="search"
         className="updapt-search-input"
         disabled={disabled}
+        value={value}
         {...rest}
       />
     </form>

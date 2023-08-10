@@ -2498,7 +2498,7 @@ function UpdaptInput(_a) {
     return (reactExports.createElement(reactExports.Fragment, null,
         reactExports.createElement("input", __assign({ className: value || isError
                 ? "updapt-input-filled ".concat(isErrorClassName(isError))
-                : "updapt-input-not-filled", style: { width: "".concat(width, "px") }, type: type }, rest))));
+                : "updapt-input-not-filled", style: { width: "".concat(width, "px") }, type: type, value: value }, rest))));
 }
 
 export { UpdaptInput };
