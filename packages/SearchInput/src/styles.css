@@ -1,16 +1,23 @@
 .updapt-form-search-input-cover {
   display: flex;
   align-items: center;
-  padding: 9px 4px 9px 40px;
+  display: flex;
+  align-items: center;
+  padding: 9px 9px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  gap: 2px;
 }
 .updapt-form-search-input-cover .updapt-input-search-img {
   width: 16px;
   height: 16px;
+  opacity: 0.6;
 }
 .updapt-form-search-input-cover .updapt-search-input {
   outline: none;
   width: 100%;
-  height: auto;
+  max-height: 100%;
+  max-width: 100%;
   font-size: 14px;
   font-weight: 400;
   color: #0e244a;
