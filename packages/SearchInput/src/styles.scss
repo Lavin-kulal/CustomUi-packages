@@ -8,14 +8,16 @@
   border-radius: 5px;
   gap: 2px;
   .updapt-input-search-img {
-    width: 16px;
-    height: 16px;
+    width: 20%;
+    height: auto;
     opacity: 0.6;
   }
   .updapt-search-input {
     outline: none;
-    width: 100%;
+    border: none;
+    width: 80%;
     height: auto;
+    max-height: 100%;
     font-size: 14px;
     font-weight: 400;
     color: #0e244a;
