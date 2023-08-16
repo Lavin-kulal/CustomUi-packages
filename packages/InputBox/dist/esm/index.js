@@ -2500,8 +2500,8 @@ function UpdaptInput(props) {
         React.createElement("div", { className: "root", style: styles === null || styles === void 0 ? void 0 : styles.root },
             lable && React.createElement("label", __assign({}, labelProps), lable),
             multiline ? (React.createElement("textarea", __assign({}, textAreaProps))) : (React.createElement("input", __assign({}, inputProps))),
-            errorMessage && React.createElement("label", __assign({}, errorLableProps), errorMessage),
-            sensitiveMessage && (React.createElement("label", __assign({}, warningLabelProps), sensitiveMessage)))));
+            isError && React.createElement("label", __assign({}, errorLableProps), errorMessage),
+            isSensitiveWord && (React.createElement("label", __assign({}, warningLabelProps), sensitiveMessage)))));
 }
 
 export { UpdaptInput };

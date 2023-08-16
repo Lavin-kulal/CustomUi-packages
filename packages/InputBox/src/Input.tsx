@@ -1,8 +1,7 @@
 import React, { CSSProperties } from "react";
 import "./styles.css";
-type IUpdaptInputProps = React.AllHTMLAttributes<
-  HTMLInputElement | HTMLTextAreaElement
-> & {
+interface IUpdaptInputProps
+  extends React.AllHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
   lable?: string;
   requiredStar?: boolean;
   errorMessage?: string;
@@ -15,7 +14,7 @@ type IUpdaptInputProps = React.AllHTMLAttributes<
   isError?: boolean;
   isSensitiveWord?: boolean;
   sensitiveMessage?: string;
-};
+}
 
 export function UpdaptInput(props: IUpdaptInputProps) {
   const {
@@ -62,8 +61,8 @@ export function UpdaptInput(props: IUpdaptInputProps) {
         ) : (
           <input {...inputProps} />
         )}
-        {errorMessage && <label {...errorLableProps}>{errorMessage}</label>}
-        {sensitiveMessage && (
+        {isError && <label {...errorLableProps}>{errorMessage}</label>}
+        {isSensitiveWord && (
           <label {...warningLabelProps}>{sensitiveMessage}</label>
         )}
       </div>
