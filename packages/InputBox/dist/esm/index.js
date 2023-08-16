@@ -2483,7 +2483,7 @@ var css_248z = ".root {\n  display: flex;\n  flex-direction: column;\n  align-it
 styleInject(css_248z);
 
 function UpdaptInput(props) {
-    var lable = props.lable, requiredStar = props.requiredStar, errorMessage = props.errorMessage, multiline = props.multiline, styles = props.styles, isSensitiveWord = props.isSensitiveWord, sensitiveMessage = props.sensitiveMessage, isError = props.isError;
+    var lable = props.lable, requiredStar = props.requiredStar, errorMessage = props.errorMessage; props.multiline; var styles = props.styles, isSensitiveWord = props.isSensitiveWord, sensitiveMessage = props.sensitiveMessage, isError = props.isError;
     var labelProps = {
         className: requiredStar ? "required-star-logo" : "label",
         style: styles === null || styles === void 0 ? void 0 : styles.label,
@@ -2504,12 +2504,12 @@ function UpdaptInput(props) {
                 return "no-error";
         }
     }
-    var inputProps = __assign(__assign({ type: "text", className: "input ".concat(className(isError, isSensitiveWord)) }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
+    __assign(__assign({ type: "text", className: "input ".concat(className(isError, isSensitiveWord)) }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
     var textAreaProps = __assign(__assign({ className: "textarea  ".concat(className(isError, isSensitiveWord)) }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
     return (React.createElement(React.Fragment, null,
         React.createElement("div", { className: "root", style: styles === null || styles === void 0 ? void 0 : styles.root },
             lable && React.createElement("label", __assign({}, labelProps), lable),
-            multiline ? (React.createElement("textarea", __assign({}, textAreaProps))) : (React.createElement("input", __assign({}, inputProps))),
+            React.createElement("textarea", __assign({}, textAreaProps)),
             isError && React.createElement("label", __assign({}, errorLableProps), errorMessage),
             isSensitiveWord && (React.createElement("label", __assign({}, warningLabelProps), sensitiveMessage)))));
 }
