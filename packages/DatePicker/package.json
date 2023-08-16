@@ -1,6 +1,6 @@
 {
   "name": "datepicker-lerna-component",
-  "version": "0.0.78",
+  "version": "0.0.79",
   "description": "",
   "main": "dist/esm/index.js",
   "types": "dist/index.d.ts",
