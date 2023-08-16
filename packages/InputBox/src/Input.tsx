@@ -26,7 +26,7 @@ export function UpdaptInput(props: IUpdaptInputProps) {
     sensitiveMessage,
   } = props;
   const labelProps: React.LabelHTMLAttributes<HTMLLabelElement> = {
-    className: requiredStar ? "required-star-logo" : "label ",
+    className: requiredStar ? "required-star-logo" : "label",
     style: styles?.label,
   };
   const errorLableProps: React.LabelHTMLAttributes<HTMLLabelElement> = {

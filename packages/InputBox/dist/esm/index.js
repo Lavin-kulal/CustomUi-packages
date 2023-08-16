@@ -2485,7 +2485,7 @@ styleInject(css_248z);
 function UpdaptInput(props) {
     var lable = props.lable, requiredStar = props.requiredStar, errorMessage = props.errorMessage, multiline = props.multiline, styles = props.styles, isSensitiveWord = props.isSensitiveWord, sensitiveMessage = props.sensitiveMessage;
     var labelProps = {
-        className: requiredStar ? "required-star-logo" : "label ",
+        className: requiredStar ? "required-star-logo" : "label",
         style: styles === null || styles === void 0 ? void 0 : styles.label,
     };
     var errorLableProps = {
