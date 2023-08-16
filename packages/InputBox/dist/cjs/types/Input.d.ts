@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import "./styles.css";
-interface IUpdaptInputProps extends React.AllHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
+type IUpdaptInputProps = React.AllHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> & {
     lable?: string;
     requiredStar?: boolean;
     errorMessage?: string;
@@ -10,8 +10,9 @@ interface IUpdaptInputProps extends React.AllHTMLAttributes<HTMLInputElement | H
         label?: CSSProperties;
         input?: CSSProperties;
     };
+    isError?: boolean;
     isSensitiveWord?: boolean;
     sensitiveMessage?: string;
-}
+};
 export declare function UpdaptInput(props: IUpdaptInputProps): React.JSX.Element;
 export {};

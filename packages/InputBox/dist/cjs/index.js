@@ -2485,7 +2485,7 @@ var css_248z = ".root {\n  display: flex;\n  flex-direction: column;\n}\n.root .
 styleInject(css_248z);
 
 function UpdaptInput(props) {
-    var lable = props.lable, requiredStar = props.requiredStar, errorMessage = props.errorMessage, multiline = props.multiline, styles = props.styles, isSensitiveWord = props.isSensitiveWord, sensitiveMessage = props.sensitiveMessage;
+    var lable = props.lable, requiredStar = props.requiredStar, errorMessage = props.errorMessage, multiline = props.multiline, styles = props.styles, isSensitiveWord = props.isSensitiveWord, sensitiveMessage = props.sensitiveMessage, isError = props.isError;
     var labelProps = {
         className: requiredStar ? "required-star-logo" : "label",
         style: styles === null || styles === void 0 ? void 0 : styles.label,
@@ -2496,8 +2496,8 @@ function UpdaptInput(props) {
     var warningLabelProps = {
         className: "label-warning",
     };
-    var inputProps = __assign(__assign({ type: "text", className: "input ".concat(errorMessage && "input-error", " ").concat(isSensitiveWord && "input-warning") }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
-    var textAreaProps = __assign(__assign({ className: "textarea ".concat(errorMessage && "input-error") }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
+    var inputProps = __assign(__assign({ type: "text", className: "input ".concat(isError && "input-error", " ").concat(isSensitiveWord && "input-warning") }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
+    var textAreaProps = __assign(__assign({ className: "textarea ".concat(isError && "input-error", " ").concat(isSensitiveWord && "input-warning") }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
     return (React.createElement(React.Fragment, null,
         React.createElement("div", { className: "root", style: styles === null || styles === void 0 ? void 0 : styles.root },
             lable && React.createElement("label", __assign({}, labelProps), lable),

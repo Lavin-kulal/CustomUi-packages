@@ -1,7 +1,8 @@
 import React, { CSSProperties } from "react";
 import "./styles.css";
-interface IUpdaptInputProps
-  extends React.AllHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
+type IUpdaptInputProps = React.AllHTMLAttributes<
+  HTMLInputElement | HTMLTextAreaElement
+> & {
   lable?: string;
   requiredStar?: boolean;
   errorMessage?: string;
@@ -11,9 +12,10 @@ interface IUpdaptInputProps
     label?: CSSProperties;
     input?: CSSProperties;
   };
+  isError?: boolean;
   isSensitiveWord?: boolean;
   sensitiveMessage?: string;
-}
+};
 
 export function UpdaptInput(props: IUpdaptInputProps) {
   const {
@@ -24,6 +26,7 @@ export function UpdaptInput(props: IUpdaptInputProps) {
     styles,
     isSensitiveWord,
     sensitiveMessage,
+    isError,
   } = props;
   const labelProps: React.LabelHTMLAttributes<HTMLLabelElement> = {
     className: requiredStar ? "required-star-logo" : "label",
@@ -37,14 +40,16 @@ export function UpdaptInput(props: IUpdaptInputProps) {
   };
   const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
     type: "text",
-    className: `input ${errorMessage && "input-error"} ${
+    className: `input ${isError && "input-error"} ${
       isSensitiveWord && "input-warning"
     }`,
     ...props,
     style: styles?.input,
   };
   const textAreaProps: React.TextareaHTMLAttributes<HTMLTextAreaElement> = {
-    className: `textarea ${errorMessage && "input-error"}`,
+    className: `textarea ${isError && "input-error"} ${
+      isSensitiveWord && "input-warning"
+    }`,
     ...props,
     style: styles?.input,
   };
