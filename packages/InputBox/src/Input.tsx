@@ -63,11 +63,7 @@ export function UpdaptInput(props: IUpdaptInputProps) {
     <>
       <div className="root" style={styles?.root}>
         {lable && <label {...labelProps}>{lable}</label>}
-        {multiline ? (
-          <textarea {...textAreaProps} />
-        ) : (
-          <input {...inputProps} />
-        )}
+        {<textarea {...textAreaProps} />}
         {isError && <label {...errorLableProps}>{errorMessage}</label>}
         {isSensitiveWord && (
           <label {...warningLabelProps}>{sensitiveMessage}</label>
