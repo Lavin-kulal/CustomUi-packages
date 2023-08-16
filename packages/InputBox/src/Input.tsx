@@ -1,34 +1,31 @@
 import React, { CSSProperties } from "react";
 import "./styles.css";
-interface IUpdaptInputProps
-  extends React.AllHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
+interface IUpdaptInputProps extends React.AllHTMLAttributes<HTMLInputElement> {
   lable?: string;
-  requiredStar?: boolean;
-  errorMessage?: string;
-  multiline?: boolean;
+  isRequired?: boolean;
   styles?: {
     root?: CSSProperties;
     label?: CSSProperties;
     input?: CSSProperties;
   };
   isError?: boolean;
-  isSensitiveWord?: boolean;
-  sensitiveMessage?: string;
+  errorMessage?: string;
+  isWarning?: boolean;
+  warningMessage?: string;
 }
-
 export function UpdaptInput(props: IUpdaptInputProps) {
   const {
     lable,
-    requiredStar,
+    isRequired,
     errorMessage,
-    multiline,
     styles,
-    isSensitiveWord,
-    sensitiveMessage,
+    isWarning,
+    warningMessage,
     isError,
+    ...rest
   } = props;
   const labelProps: React.LabelHTMLAttributes<HTMLLabelElement> = {
-    className: requiredStar ? "required-star-logo" : "label",
+    className: isRequired ? "required-star-logo" : "label",
     style: styles?.label,
   };
   const errorLableProps: React.LabelHTMLAttributes<HTMLLabelElement> = {
@@ -50,24 +47,18 @@ export function UpdaptInput(props: IUpdaptInputProps) {
   }
   const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
     type: "text",
-    className: `input ${className(isError!, isSensitiveWord!)}`,
-    ...props,
+    className: `input ${className(isError!, isWarning!)}`,
+    ...rest,
     style: styles?.input,
   };
-  const textAreaProps: React.TextareaHTMLAttributes<HTMLTextAreaElement> = {
-    className: `textarea  ${className(isError!, isSensitiveWord!)}`,
-    ...props,
-    style: styles?.input,
-  };
+
   return (
     <>
       <div className="root" style={styles?.root}>
         {lable && <label {...labelProps}>{lable}</label>}
-        {<textarea {...textAreaProps} />}
+        {<input {...inputProps} />}
         {isError && <label {...errorLableProps}>{errorMessage}</label>}
-        {isSensitiveWord && (
-          <label {...warningLabelProps}>{sensitiveMessage}</label>
-        )}
+        {isWarning && <label {...warningLabelProps}>{warningMessage}</label>}
       </div>
     </>
   );

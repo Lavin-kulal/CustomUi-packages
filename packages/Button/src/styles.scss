@@ -1,0 +1,670 @@
+.button-cover-primary-button-sm {
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #ffffff;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+}
+.button-cover-primary-button-sm:hover {
+  background-color: #0009d6;
+}
+.button-cover-primary-button-md {
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #ffffff;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+}
+.button-cover-primary-button-md:hover {
+  background-color: #0009d6;
+}
+.button-cover-primary-button-lg {
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: none;
+  color: #ffffff;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+}
+.button-cover-primary-button-lg:hover {
+  background-color: #0009d6;
+}
+.button-cover-secondary-button-sm {
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #2863ff;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+}
+.button-cover-secondary-button-sm:hover {
+  border-color: #0009d6;
+  color: #0009d6;
+}
+.button-cover-secondary-button-sm {
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #2863ff;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+}
+.button-cover-secondary-button-sm:hover {
+  border-color: #0009d6;
+  color: #0009d6;
+}
+.button-cover-secondary-button-md {
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #2863ff;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+}
+.button-cover-secondary-button-md:hover {
+  border-color: #0009d6;
+  color: #0009d6;
+}
+.button-cover-secondary-button-lg {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #2863ff;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+}
+.button-cover-secondary-button-lg:hover {
+  border-color: #0009d6;
+  color: #0009d6;
+}
+/* {//with svg} */
+.button-cover-primary-button-with-svg-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #ffffff;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+}
+.button-cover-primary-button-with-svg-sm:hover {
+  background-color: #0009d6;
+}
+.button-cover-primary-button-with-svg-md {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #ffffff;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+}
+.button-cover-primary-button-with-svg-md:hover {
+  background-color: #0009d6;
+}
+.button-cover-primary-button-with-svg-lg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #ffffff;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+}
+.button-cover-primary-button-with-svg-lg:hover {
+  background-color: #0009d6;
+}
+
+.button-cover-secondary-button-with-svg-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #2863ff;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+}
+.button-cover-secondary-button-with-svg-sm:hover {
+  border-color: #0009d6;
+  color: #0009d6;
+}
+.button-cover-secondary-button-with-svg-md {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #2863ff;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+}
+.button-cover-secondary-button-with-svg-md:hover {
+  border-color: #0009d6;
+  color: #0009d6;
+}
+.button-cover-secondary-button-with-svg-lg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #2863ff;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #2863ff;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+}
+.button-cover-secondary-button-with-svg-lg:hover {
+  border-color: #0009d6;
+  color: #0009d6;
+}
+
+/* {disbaled butttons} */
+.button-cover-primary-button-sm-disabled {
+  border: 1px solid #eaecef;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #eaecef;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-primary-button-sm-disabled:hover {
+  opacity: 999;
+}
+.button-cover-primary-button-md-disabled {
+  border: 1px solid #eaecef;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #eaecef;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-primary-button-md-disabled:hover {
+  opacity: 999;
+}
+.button-cover-primary-button-lg-disabled {
+  border: 1px solid #eaecef;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #eaecef;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-primary-button-lg-disabled:hover {
+  opacity: 999;
+}
+.button-cover-secondary-button-sm-disabled {
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ffffff;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-secondary-button-sm-disabled:hover {
+  opacity: 999;
+}
+.button-cover-secondary-button-md-disabled {
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #ffffff;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-secondary-button-md-disabled:hover {
+  opacity: 999;
+}
+.button-cover-secondary-button-lg-disabled {
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffffff;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-secondary-button-lg-disabled:hover {
+  opacity: 999;
+}
+
+/* {//diabled with svg} */
+.button-cover-primary-button-with-svg-sm-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #eaecef;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #eaecef;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-primary-button-with-svg-sm-disabled:hover {
+  opacity: 999;
+}
+.button-cover-primary-button-with-svg-md-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #eaecef;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #eaecef;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-primary-button-with-svg-md-disabled:hover {
+  opacity: 999;
+}
+.button-cover-primary-button-with-svg-lg-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #eaecef;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #eaecef;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-primary-button-with-svg-lg-disabled:hover {
+  opacity: 999;
+}
+
+.button-cover-secondary-button-with-svg-sm-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ffffff;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-secondary-button-with-svg-sd-disabled:hover {
+  opacity: 999;
+}
+.button-cover-secondary-button-with-svg-md-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #ffffff;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-secondary-button-with-svg-md-disabled:hover {
+  opacity: 999;
+}
+.button-cover-secondary-button-with-svg-lg-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid #a0a0a0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffffff;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #a0a0a0;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+  cursor: not-allowed;
+}
+.button-cover-secondary-button-with-svg-lg-disabled:hover {
+  opacity: 999;
+}
+/* {//red seconday} */
+.button-cover-secondary-red-sm {
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #de4841;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #de4841;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+}
+.button-cover-secondary-button-red-sm:hover {
+  border-color: #c2160d;
+  color: #a71911;
+  opacity: 999;
+}
+.button-cover-secondary-button-red-md {
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #de4841;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #de4841;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+}
+.button-cover-secondary-button-red-md:hover {
+  border-color: #c2160d;
+  color: #a71911;
+  opacity: 999;
+}
+.button-cover-secondary-button-red-lg {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #de4841;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #de4841;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+}
+.button-cover-secondary-button-red-lg:hover {
+  border-color: #c2160d;
+  color: #a71911;
+  opacity: 999;
+}
+/* {//red with svg} */
+.button-cover-secondary-button-red-with-svg-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #de4841;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #de4841;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+}
+.button-cover-secondary-button-red-with-svg-sm:hover {
+  border-color: #c2160d;
+  color: #a71911;
+  opacity: 999;
+}
+.button-cover-secondary-button-red-with-svg-md {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #de4841;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #de4841;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+}
+.button-cover-secondary-button-red-with-svg-md:hover {
+  border-color: #c2160d;
+  color: #a71911;
+  opacity: 999;
+}
+.button-cover-secondary-button-red-with-svg-lg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #de4841;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #de4841;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+}
+.button-cover-secondary-button-red-with-svg-lg:hover {
+  border-color: #c2160d;
+  color: #a71911;
+  opacity: 999;
+}
+/* {//Cancel Button} */
+.button-cover-secondary-button-cancel-sm {
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #5b677b;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #5b677b;
+  min-width: 68px;
+  min-height: 30px;
+  padding: 4px;
+}
+.button-cover-secondary-button-cancel-sm:hover {
+  border-color: #102141;
+  color: #102141;
+}
+.button-cover-secondary-button-cancel-md {
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #5b677b;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #5b677b;
+  min-width: 92px;
+  min-height: 40px;
+  padding: 4px;
+}
+.button-cover-secondary-button-cancel-md:hover {
+  border-color: #102141;
+  color: #102141;
+}
+.button-cover-secondary-button-cancel-lg {
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: 1px solid #5b677b;
+  cursor: pointer;
+  opacity: 1;
+  text-transform: capitalize;
+  color: #5b677b;
+  min-width: 333px;
+  min-height: 48px;
+  padding: 4px;
+}
+.button-cover-secondary-button-cancel-lg:hover {
+  border-color: #102141;
+  color: #102141;
+}
