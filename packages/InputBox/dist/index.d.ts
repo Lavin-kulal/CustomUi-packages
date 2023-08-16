@@ -1,11 +1,18 @@
-import * as React from 'react';
+import React, { CSSProperties } from 'react';
 
-type UpdaptInputProp = React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> & {
-    type: any;
-    width: number;
-    isError?: boolean;
-    value?: any;
-};
-declare function UpdaptInput({ type, isError, width, value, ...rest }: UpdaptInputProp): React.JSX.Element;
+interface IUpdaptInputProps extends React.AllHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
+    lable?: string;
+    requiredStar?: boolean;
+    errorMessage?: string;
+    multiline?: boolean;
+    styles?: {
+        root?: CSSProperties;
+        label?: CSSProperties;
+        input?: CSSProperties;
+    };
+    isSensitiveWord?: boolean;
+    sensitiveMessage?: string;
+}
+declare function UpdaptInput(props: IUpdaptInputProps): React.JSX.Element;
 
 export { UpdaptInput };

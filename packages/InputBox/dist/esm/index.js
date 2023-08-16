@@ -24,18 +24,14 @@ var __assign = function () {
   };
   return __assign.apply(this, arguments);
 };
-function __rest(s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
-}
 typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
   var e = new Error(message);
   return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
+
+function getDefaultExportFromCjs (x) {
+	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+}
 
 var react = {exports: {}};
 
@@ -2456,6 +2452,7 @@ function requireReact_development () {
 }
 
 var reactExports = react.exports;
+var React = /*@__PURE__*/getDefaultExportFromCjs(reactExports);
 
 function styleInject(css, ref) {
   if (ref === void 0) ref = {};
@@ -2482,23 +2479,29 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt-input-filled {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 4px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n}\n.updapt-input-filled.error {\n  border: 1px solid red;\n}\n.updapt-input-filled.no-error {\n  border: 1px solid #dee2e6;\n}\n.updapt-input-filled:focus {\n  border-color: #2863ff;\n}\n.updapt-input-filled::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-input-filled::placeholder {\n  color: #a0a0a0;\n}\n.updapt-input-filled:disabled {\n  border-color: #eaecef !important;\n  background-color: #eaecef !important;\n  opacity: 1 !important;\n  pointer-events: none !important;\n}\n\n.updapt-input-not-filled {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 5px;\n  border: 1px solid #dee2e6;\n  font-size: 14px;\n  font-weight: 400;\n}\n.updapt-input-not-filled:focus {\n  border-color: #2863ff;\n}";
+var css_248z = ".root {\n  display: flex;\n  flex-direction: column;\n}\n.root .input {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  border-radius: 4px;\n}\n.root .input:focus {\n  border-color: blue;\n}\n.root .input:disabled {\n  background-color: #eaecef;\n  color: #a0a0a0;\n}\n.root .input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.root .input::placeholder {\n  color: #a0a0a0;\n}\n.root .textarea {\n  resize: none;\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  border-radius: 4px;\n}\n.root .textarea:focus {\n  border-color: blue;\n}\n.root .textarea:disabled {\n  background-color: #eaecef;\n  color: #a0a0a0;\n}\n.root .textarea::-moz-placeholder {\n  color: #a0a0a0;\n}\n.root .textarea::placeholder {\n  color: #a0a0a0;\n}\n.root .required-star-logo::after {\n  content: \"*\";\n  color: #de4841;\n  padding-left: 6px;\n}\n.root .label {\n  color: #0e244a;\n  font-size: 14px;\n  font-weight: 400;\n}\n.root .input-error {\n  border-color: #de4841;\n}\n.root .input-warning {\n  color: #c78404;\n  font-size: 12px;\n  font-weight: 400;\n  border-color: #c78404;\n}\n.root .label-error {\n  color: #de4841;\n  font-size: 12px;\n  font-weight: 400;\n}";
 styleInject(css_248z);
 
-function UpdaptInput(_a) {
-    var type = _a.type, isError = _a.isError, width = _a.width, value = _a.value, rest = __rest(_a, ["type", "isError", "width", "value"]);
-    function isErrorClassName(isError) {
-        if (isError) {
-            return "error";
-        }
-        else {
-            return "no-error";
-        }
-    }
-    return (reactExports.createElement(reactExports.Fragment, null,
-        reactExports.createElement("input", __assign({ className: value || isError
-                ? "updapt-input-filled ".concat(isErrorClassName(isError))
-                : "updapt-input-not-filled", style: { width: "".concat(width, "px") }, type: type, value: value }, rest))));
+function UpdaptInput(props) {
+    var lable = props.lable, requiredStar = props.requiredStar, errorMessage = props.errorMessage, multiline = props.multiline, styles = props.styles, isSensitiveWord = props.isSensitiveWord, sensitiveMessage = props.sensitiveMessage;
+    var labelProps = {
+        className: requiredStar ? "required-star-logo" : "label ",
+        style: styles === null || styles === void 0 ? void 0 : styles.label,
+    };
+    var errorLableProps = {
+        className: "label-error",
+    };
+    var warningLabelProps = {
+        className: "label-warning",
+    };
+    var inputProps = __assign(__assign({ type: "text", className: "input ".concat(errorMessage && "input-error", " ").concat(isSensitiveWord && "input-warning") }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
+    var textAreaProps = __assign(__assign({ className: "textarea ".concat(errorMessage && "input-error") }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
+    return (React.createElement(React.Fragment, null,
+        React.createElement("div", { className: "root", style: styles === null || styles === void 0 ? void 0 : styles.root },
+            lable && React.createElement("label", __assign({}, labelProps), lable),
+            multiline ? (React.createElement("textarea", __assign({}, textAreaProps))) : (React.createElement("input", __assign({}, inputProps))),
+            errorMessage && React.createElement("label", __assign({}, errorLableProps), errorMessage),
+            sensitiveMessage && (React.createElement("label", __assign({}, warningLabelProps), sensitiveMessage)))));
 }
 
 export { UpdaptInput };

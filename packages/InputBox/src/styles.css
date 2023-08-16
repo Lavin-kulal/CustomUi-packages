@@ -1,0 +1,73 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+.root .input {
+  outline: none;
+  padding: 0.5em;
+  color: #0e244a;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+.root .input:focus {
+  border-color: blue;
+}
+.root .input:disabled {
+  background-color: #eaecef;
+  color: #a0a0a0;
+}
+.root .input::-moz-placeholder {
+  color: #a0a0a0;
+}
+.root .input::placeholder {
+  color: #a0a0a0;
+}
+.root .textarea {
+  resize: none;
+  outline: none;
+  padding: 0.5em;
+  color: #0e244a;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+.root .textarea:focus {
+  border-color: blue;
+}
+.root .textarea:disabled {
+  background-color: #eaecef;
+  color: #a0a0a0;
+}
+.root .textarea::-moz-placeholder {
+  color: #a0a0a0;
+}
+.root .textarea::placeholder {
+  color: #a0a0a0;
+}
+.root .required-star-logo::after {
+  content: "*";
+  color: #de4841;
+  padding-left: 6px;
+}
+.root .label {
+  color: #0e244a;
+  font-size: 14px;
+  font-weight: 400;
+}
+.root .input-error {
+  border-color: #de4841;
+}
+.root .input-warning {
+  color: #c78404;
+  font-size: 12px;
+  font-weight: 400;
+  border-color: #c78404;
+}
+.root .label-error {
+  color: #de4841;
+  font-size: 12px;
+  font-weight: 400;
+}/*# sourceMappingURL=styles.css.map */
