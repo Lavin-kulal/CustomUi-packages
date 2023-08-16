@@ -37,18 +37,23 @@ export function UpdaptInput(props: IUpdaptInputProps) {
   const warningLabelProps: React.LabelHTMLAttributes<HTMLLabelElement> = {
     className: `label-warning`,
   };
+
+  function className(isError: boolean, isSensitiveWord: boolean) {
+    if (isError) {
+      return "input-error";
+    }
+    if (isSensitiveWord) {
+      return "input-warning";
+    }
+  }
   const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
     type: "text",
-    className: `input ${isError && "input-error"} ${
-      isSensitiveWord && "input-warning"
-    }`,
+    className: `input ${className(isError!, isSensitiveWord!)}`,
     ...props,
     style: styles?.input,
   };
   const textAreaProps: React.TextareaHTMLAttributes<HTMLTextAreaElement> = {
-    className: `textarea ${isError && "input-error"} ${
-      isSensitiveWord && "input-warning"
-    }`,
+    className: `textarea  ${className(isError!, isSensitiveWord!)}`,
     ...props,
     style: styles?.input,
   };

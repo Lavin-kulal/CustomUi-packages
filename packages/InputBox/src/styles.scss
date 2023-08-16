@@ -19,6 +19,15 @@
     &::placeholder {
       color: #a0a0a0;
     }
+    &.input-error {
+      border-color: #de4841;
+    }
+    &.input-warning {
+      color: #c78404;
+      font-size: 12px;
+      font-weight: 400;
+      border-color: #c78404;
+    }
   }
   .textarea {
     resize: none;
@@ -39,26 +48,36 @@
     &::placeholder {
       color: #a0a0a0;
     }
+    &.input-error {
+      border-color: #de4841;
+    }
+    &.input-warning {
+      color: #c78404;
+      font-size: 12px;
+      font-weight: 400;
+      border-color: #c78404;
+    }
   }
   .required-star-logo::after {
     content: "*";
     color: #de4841;
     padding-left: 6px;
   }
-  .label {
-    color: #0e244a;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .input-error {
+  &.input-error {
     border-color: #de4841;
   }
-  .input-warning {
+  &.input-warning {
     color: #c78404;
     font-size: 12px;
     font-weight: 400;
     border-color: #c78404;
   }
+  .label {
+    color: #0e244a;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
   .label-error {
     color: #de4841;
     font-size: 12px;
