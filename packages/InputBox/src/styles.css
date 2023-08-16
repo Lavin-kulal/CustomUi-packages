@@ -11,6 +11,8 @@
   font-weight: 400;
   border: 1px solid #dee2e6;
   border-radius: 4px;
+  min-width: 225px;
+  min-height: 20px;
 }
 .root .input.error {
   border: 1px solid #de4841;
@@ -36,6 +38,7 @@
   color: #a0a0a0;
   border-color: #eaecef;
   background-color: #eaecef;
+  cursor: not-allowed;
 }
 .root .textarea {
   resize: none;
@@ -73,6 +76,7 @@
   color: #a0a0a0;
   border-color: #eaecef;
   background-color: #eaecef;
+  cursor: not-allowed;
 }
 .root .required-star-logo::after {
   content: "*";

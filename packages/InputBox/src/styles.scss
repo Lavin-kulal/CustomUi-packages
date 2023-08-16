@@ -10,6 +10,8 @@
     font-weight: 400;
     border: 1px solid #dee2e6;
     border-radius: 4px;
+    min-width: 225px;
+    min-height: 20px;
     &.error {
       border: 1px solid #de4841;
     }
@@ -31,6 +33,7 @@
       color: #a0a0a0;
       border-color: #eaecef;
       background-color: #eaecef;
+      cursor: not-allowed;
     }
   }
   .textarea {
@@ -65,6 +68,7 @@
       color: #a0a0a0;
       border-color: #eaecef;
       background-color: #eaecef;
+      cursor: not-allowed;
     }
   }
   .required-star-logo::after {
