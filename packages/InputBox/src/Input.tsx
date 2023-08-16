@@ -48,7 +48,6 @@ export function UpdaptInput(props: IUpdaptInputProps) {
         return "no-error";
     }
   }
-
   const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
     type: "text",
     className: `input ${className(isError!, isSensitiveWord!)}`,
