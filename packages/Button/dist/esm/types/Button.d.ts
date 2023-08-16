@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./styles.css";
 interface IUpdaptButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     children: React.ReactNode;
     size: string;
