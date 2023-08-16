@@ -9,24 +9,30 @@
     font-weight: 400;
     border: 1px solid #dee2e6;
     border-radius: 4px;
-    &:focus {
-      border-color: blue;
+    min-width: 225px;
+    min-height: 44px;
+    &.error {
+      border: 1px solid #de4841;
     }
-    &:disabled {
-      background-color: #eaecef;
-      color: #a0a0a0;
-    }
-    &::placeholder {
-      color: #a0a0a0;
-    }
-    &.input-error {
-      border-color: #de4841;
+    &.no-error {
+      border: 1px solid #dee2e6;
     }
     &.input-warning {
       color: #c78404;
       font-size: 12px;
       font-weight: 400;
       border-color: #c78404;
+    }
+    &:focus {
+      border-color: #2863ff;
+    }
+    &::placeholder {
+      color: #a0a0a0;
+    }
+    &:disabled {
+      color: #a0a0a0;
+      border-color: #eaecef;
+      background-color: #eaecef;
     }
   }
   .textarea {
@@ -47,15 +53,6 @@
     }
     &::placeholder {
       color: #a0a0a0;
-    }
-    &.input-error {
-      border-color: #de4841;
-    }
-    &.input-warning {
-      color: #c78404;
-      font-size: 12px;
-      font-weight: 400;
-      border-color: #c78404;
     }
   }
   .required-star-logo::after {

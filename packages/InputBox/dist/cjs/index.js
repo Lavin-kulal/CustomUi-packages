@@ -2497,11 +2497,13 @@ function UpdaptInput(props) {
         className: "label-warning",
     };
     function className(isError, isSensitiveWord) {
-        if (isError) {
-            return "input-error";
-        }
-        if (isSensitiveWord) {
-            return "input-warning";
+        switch (true) {
+            case isError:
+                return "error";
+            case isSensitiveWord:
+                return "input-warning";
+            default:
+                return "no-error";
         }
     }
     var inputProps = __assign(__assign({ type: "text", className: "input ".concat(className(isError, isSensitiveWord)) }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });

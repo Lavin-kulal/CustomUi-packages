@@ -39,13 +39,16 @@ export function UpdaptInput(props: IUpdaptInputProps) {
   };
 
   function className(isError: boolean, isSensitiveWord: boolean) {
-    if (isError) {
-      return "input-error";
-    }
-    if (isSensitiveWord) {
-      return "input-warning";
+    switch (true) {
+      case isError:
+        return "error";
+      case isSensitiveWord:
+        return "input-warning";
+      default:
+        return "no-error";
     }
   }
+
   const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
     type: "text",
     className: `input ${className(isError!, isSensitiveWord!)}`,
