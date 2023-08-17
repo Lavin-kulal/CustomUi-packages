@@ -6834,7 +6834,7 @@ var faMagnifyingGlass = {
 var faSearch = faMagnifyingGlass;
 
 var icons = {
-    search: React.createElement(FontAwesomeIcon, { icon: faSearch, size: "1x", color: "#F47878" }),
+    search: React.createElement(FontAwesomeIcon, { icon: faSearch, size: "1x", color: "#A0A0A0" }),
 };
 
 function UpdaptSearchInput(_a) {

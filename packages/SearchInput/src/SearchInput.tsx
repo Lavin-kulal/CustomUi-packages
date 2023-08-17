@@ -29,7 +29,7 @@ export function UpdaptSearchInput({
         disabled ? "disabled" : "not-disabled"
       }`}
     >
-      <span>{icons.search}</span>
+      <span className="svg">{icons.search}</span>
       <input
         type="search"
         className="updapt-search-input"

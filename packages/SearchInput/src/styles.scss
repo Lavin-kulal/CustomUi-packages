@@ -1,32 +1,42 @@
 .updapt-form-search-input-cover {
-  display: flex;
-  align-items: center;
-  padding: 9px 9px;
-  border: 1px solid #dee2e6;
-  border-radius: 4px;
-  gap: 2px;
+  --input-height: 32px;
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 100px;
+  height: var(--input-height, 32px);
   &.disabled {
     border-color: #eaecef;
     background-color: #eaecef;
     opacity: 1;
     pointer-events: none;
+    cursor: not-allowed;
   }
   &.not-disabled {
     border-color: #dee2e6;
   }
-  .updapt-input-search-img {
-    width: 16px;
-    height: 16px;
-    opacity: 0.6;
+  .svg {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 0.5em);
+    font-size: 16px;
+    pointer-events: none;
   }
   .updapt-search-input {
     outline: none;
     border: none;
-    width: 100%;
-    max-height: 100%;
     font-size: 14px;
     font-weight: 400;
     color: #0e244a;
+    display: block;
+    width: 100%;
+    height: var(--input-height, 32px);
+    padding: 4px 8px 4px 30px;
+    border-radius: 3px;
+    background-color: transparent;
+    text-overflow: ellipsis;
     &::placeholder {
       color: #a0a0a0;
     }
