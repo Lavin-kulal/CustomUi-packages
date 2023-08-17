@@ -1,6 +1,6 @@
 {
   "name": "@lavinscoped/lerna-button-comp",
-  "version": "0.0.100",
+  "version": "0.0.101",
   "description": "",
   "main": "dist/esm/index.js",
   "types": "dist/index.d.ts",
