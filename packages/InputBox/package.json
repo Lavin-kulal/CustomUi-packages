@@ -1,6 +1,6 @@
 {
   "name": "input-lerna-component",
-  "version": "0.0.87",
+  "version": "0.0.88",
   "description": "",
   "main": "dist/esm/index.js",
   "types": "dist/index.d.ts",
