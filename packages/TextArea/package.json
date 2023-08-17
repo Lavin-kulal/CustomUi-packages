@@ -1,5 +1,5 @@
 {
-  "name": "text-area-lerna-componentts",
+  "name": "@lavinscoped/text-area-lerna-componentts",
   "version": "0.0.95",
   "description": "",
   "main": "dist/esm/index.js",
