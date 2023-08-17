@@ -1,4 +1,4 @@
 const images = {
-  searchIcon: require("../../Assets/Images/searchIcon.svg").default,
+  searchIcon: require("../../Assets/Images/searchIcon.svg"),
 };
 export default images;
