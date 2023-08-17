@@ -2489,7 +2489,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt-form-search-input-cover {\n  --input-height: 32px;\n  position: relative;\n  display: block;\n  width: 100%;\n  min-width: 100px;\n  height: var(--input-height, 32px);\n}\n.updapt-form-search-input-cover.disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n  opacity: 1;\n  pointer-events: none;\n  cursor: not-allowed;\n}\n.updapt-form-search-input-cover.not-disabled {\n  border-color: #dee2e6;\n}\n.updapt-form-search-input-cover .svg {\n  width: 1em;\n  height: 1em;\n  position: absolute;\n  left: 10px;\n  top: calc(50% - 0.5em);\n  font-size: 16px;\n  pointer-events: none;\n}\n.updapt-form-search-input-cover .updapt-search-input {\n  outline: none;\n  border: none;\n  font-size: 14px;\n  font-weight: 400;\n  color: #0e244a;\n  display: block;\n  width: 100%;\n  height: var(--input-height, 32px);\n  padding: 4px 8px 4px 30px;\n  border-radius: 3px;\n  background-color: transparent;\n  text-overflow: ellipsis;\n}\n.updapt-form-search-input-cover .updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-form-search-input-cover .updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-form-search-input-cover .updapt-search-input:disabled {\n  background-color: #eaecef;\n  color: #a0a0a0;\n}\n\n.updapt-form-search-input-cover:focus-within {\n  border-color: #2863ff;\n}";
+var css_248z = ".updapt-form-search-input-cover {\n  display: flex;\n  align-items: center;\n  padding: 9px 9px;\n  border: 1px solid #dee2e6;\n  border-radius: 4px;\n  gap: 2px;\n}\n.updapt-form-search-input-cover.disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n  opacity: 1;\n  pointer-events: none;\n  cursor: not-allowed;\n}\n.updapt-form-search-input-cover.not-disabled {\n  border-color: #dee2e6;\n}\n.updapt-form-search-input-cover .updapt-input-search-icon {\n  width: 16px;\n  height: 16px;\n  opacity: 0.6;\n}\n.updapt-form-search-input-cover .updapt-search-input {\n  outline: none;\n  border: none;\n  min-width: 222px;\n  min-height: 20px;\n  font-size: 14px;\n  font-weight: 400;\n  color: #0e244a;\n}\n.updapt-form-search-input-cover .updapt-search-input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.updapt-form-search-input-cover .updapt-search-input::placeholder {\n  color: #a0a0a0;\n}\n.updapt-form-search-input-cover .updapt-search-input:disabled {\n  background-color: #eaecef;\n  color: #a0a0a0;\n  pointer-events: none;\n  cursor: not-allowed;\n}\n\n.updapt-form-search-input-cover:focus-within {\n  border-color: #2863ff;\n}";
 styleInject(css_248z);
 
 function ownKeys$1(object, enumerableOnly) {
@@ -6837,13 +6837,14 @@ var icons = {
     search: React.createElement(FontAwesomeIcon, { icon: faSearch, size: "1x", color: "#A0A0A0" }),
 };
 
-function UpdaptSearchInput(_a) {
-    var width = _a.width, disabled = _a.disabled, value = _a.value, rest = __rest(_a, ["width", "disabled", "value"]);
-    return (React.createElement("form", { style: {
-            width: "".concat(width, "px"),
-        }, className: "updapt-form-search-input-cover ".concat(disabled ? "disabled" : "not-disabled") },
-        React.createElement("span", { className: "svg" }, icons.search),
-        React.createElement("input", __assign({ type: "search", className: "updapt-search-input", disabled: disabled, value: value }, rest))));
+function UpdaptSearchInput(props) {
+    props.width; var disabled = props.disabled; props.value; var styles = props.styles, rest = __rest(props, ["width", "disabled", "value", "styles"]);
+    var formProps = __assign(__assign({ className: "updapt-form-search-input-cover ".concat(disabled ? "disabled" : "not-disabled") }, rest), { style: styles === null || styles === void 0 ? void 0 : styles.root });
+    var spanProps = __assign(__assign({ className: "updapt-input-search-icon" }, rest), { style: styles === null || styles === void 0 ? void 0 : styles.icon });
+    var inputProps = __assign(__assign({ type: "search", className: "updapt-search-input" }, rest), { style: styles === null || styles === void 0 ? void 0 : styles.input });
+    return (React.createElement("form", __assign({}, formProps),
+        React.createElement("span", __assign({}, spanProps), icons.search),
+        React.createElement("input", __assign({}, inputProps))));
 }
 
 exports.UpdaptSearchInput = UpdaptSearchInput;

@@ -1,42 +1,41 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import "./styles.css";
 import images from "./Common/imageVaribale";
 import icons from "./icons/icons";
 
-export type UpdaptSearchProps = Omit<
-  React.DetailedHTMLProps<
-    React.InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement
-  >,
-  "disabled"
-> & {
-  width: number;
-  disabled?: boolean;
-  value: any;
-};
-export function UpdaptSearchInput({
-  width,
-  disabled,
-  value,
-  ...rest
-}: UpdaptSearchProps) {
+interface UpdaptSearchProps
+  extends React.AllHTMLAttributes<HTMLInputElement | HTMLFormElement> {
+  styles: {
+    root: CSSProperties;
+    icon: CSSProperties;
+    input: CSSProperties;
+  };
+}
+export function UpdaptSearchInput(props: UpdaptSearchProps) {
+  const { width, disabled, value, styles, ...rest } = props;
+  const formProps: React.FormHTMLAttributes<HTMLFormElement> = {
+    className: `updapt-form-search-input-cover ${
+      disabled ? "disabled" : "not-disabled"
+    }`,
+    ...rest,
+    style: styles?.root,
+  };
+  const spanProps: React.HTMLAttributes<HTMLSpanElement> = {
+    className: "updapt-input-search-icon",
+    ...rest,
+    style: styles?.icon,
+  };
+  const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
+    type: "search",
+    className: "updapt-search-input",
+    ...rest,
+    style: styles?.input,
+  };
+
   return (
-    <form
-      style={{
-        width: `${width}px`,
-      }}
-      className={`updapt-form-search-input-cover ${
-        disabled ? "disabled" : "not-disabled"
-      }`}
-    >
-      <span className="svg">{icons.search}</span>
-      <input
-        type="search"
-        className="updapt-search-input"
-        disabled={disabled}
-        value={value}
-        {...rest}
-      />
+    <form {...formProps}>
+      <span {...spanProps}>{icons.search}</span>
+      <input {...inputProps} />
     </form>
   );
 }
