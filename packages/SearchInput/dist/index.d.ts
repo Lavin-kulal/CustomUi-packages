@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 type UpdaptSearchProps = Omit<React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>, "disabled"> & {
     width: number;

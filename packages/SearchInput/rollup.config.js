@@ -30,7 +30,7 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       babel({
         babelHelpers: "bundled",
-        presets: ["@babel/preset-env", "@babel/preset-react"],
+        presets: ["@babel/preset-react"],
         extensions: [".js"],
       }),
       commonjs(),
