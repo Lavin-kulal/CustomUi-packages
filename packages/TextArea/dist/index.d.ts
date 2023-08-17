@@ -1,10 +1,16 @@
-import * as React from 'react';
+import React, { CSSProperties } from 'react';
 
 type UpdaptTextAreaProp = React.DetailedHTMLProps<React.TextareaHTMLAttributes<HTMLTextAreaElement>, HTMLTextAreaElement> & {
-    width: number;
+    styles?: {
+        root?: CSSProperties;
+        label?: CSSProperties;
+        input?: CSSProperties;
+    };
     isError?: boolean;
-    value?: any;
+    errorMessage?: string;
+    isWarning?: boolean;
+    warningMessage?: string;
 };
-declare function UpdaptTextArea({ width, isError, value, ...rest }: UpdaptTextAreaProp): React.JSX.Element;
+declare function UpdaptTextArea(props: UpdaptTextAreaProp): React.JSX.Element;
 
 export { UpdaptTextArea, UpdaptTextAreaProp };

@@ -1,49 +1,51 @@
-.updapt-text-area-filled {
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.root .textarea {
+  resize: none;
   outline: none;
   padding: 0.5em;
   color: #0e244a;
-  border-radius: 4px;
   font-size: 14px;
   font-weight: 400;
   border: 1px solid #dee2e6;
-  resize: none;
+  border-radius: 4px;
+  min-width: 225px;
+  min-height: 107px;
 }
-.updapt-text-area-filled.error {
+.root .textarea.error {
   border: 1px solid #de4841;
 }
-.updapt-text-area-filled.no-error {
+.root .textarea.no-error {
   border: 1px solid #dee2e6;
 }
-.updapt-text-area-filled:focus {
+.root .textarea.input-warning {
+  border-color: #c78404;
+}
+.root .textarea:focus {
   border-color: #2863ff;
 }
-.updapt-text-area-filled::-moz-placeholder {
+.root .textarea::-moz-placeholder {
   color: #a0a0a0;
-  font-size: 14px;
-  font-weight: 400;
 }
-.updapt-text-area-filled::placeholder {
+.root .textarea::placeholder {
   color: #a0a0a0;
-  font-size: 14px;
-  font-weight: 400;
 }
-.updapt-text-area-filled:disabled {
+.root .textarea:disabled {
+  color: #a0a0a0;
   border-color: #eaecef;
   background-color: #eaecef;
-  opacity: 1;
-  pointer-events: none;
+  cursor: not-allowed;
 }
-
-.updapt-text-area-not-filled {
-  outline: none;
-  padding: 0.5em;
-  color: #0e244a;
-  border-radius: 5px;
-  border: 1px solid #dee2e6;
-  font-size: 14px;
+.root .label-error {
+  color: #de4841;
+  font-size: 12px;
   font-weight: 400;
-  resize: none;
 }
-.updapt-text-area-not-filled:focus {
-  border-color: #2863ff;
+.root .label-warning {
+  color: #c78404;
+  font-size: 12px;
+  font-weight: 400;
 }/*# sourceMappingURL=styles.css.map */

@@ -2504,11 +2504,11 @@ function UpdaptInput(props) {
     var warningLabelProps = {
         className: "label-warning",
     };
-    function className(isError, isSensitiveWord) {
+    function className(isError, isWarning) {
         switch (true) {
             case isError:
                 return "error";
-            case isSensitiveWord:
+            case isWarning:
                 return "input-warning";
             default:
                 return "no-error";

@@ -35,11 +35,11 @@ export function UpdaptInput(props: IUpdaptInputProps) {
     className: `label-warning`,
   };
 
-  function className(isError: boolean, isSensitiveWord: boolean) {
+  function className(isError: boolean, isWarning: boolean) {
     switch (true) {
       case isError:
         return "error";
-      case isSensitiveWord:
+      case isWarning:
         return "input-warning";
       default:
         return "no-error";

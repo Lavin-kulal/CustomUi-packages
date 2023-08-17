@@ -39,6 +39,10 @@ typeof SuppressedError === "function" ? SuppressedError : function (error, suppr
   return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
 };
 
+function getDefaultExportFromCjs (x) {
+	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
+}
+
 var react = {exports: {}};
 
 var react_development = {exports: {}};
@@ -2458,6 +2462,7 @@ function requireReact_development () {
 }
 
 var reactExports = react.exports;
+var React = /*@__PURE__*/getDefaultExportFromCjs(reactExports);
 
 function styleInject(css, ref) {
   if (ref === void 0) ref = {};
@@ -2484,23 +2489,28 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".updapt-text-area-filled {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 4px;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  resize: none;\n}\n.updapt-text-area-filled.error {\n  border: 1px solid #de4841;\n}\n.updapt-text-area-filled.no-error {\n  border: 1px solid #dee2e6;\n}\n.updapt-text-area-filled:focus {\n  border-color: #2863ff;\n}\n.updapt-text-area-filled::-moz-placeholder {\n  color: #a0a0a0;\n  font-size: 14px;\n  font-weight: 400;\n}\n.updapt-text-area-filled::placeholder {\n  color: #a0a0a0;\n  font-size: 14px;\n  font-weight: 400;\n}\n.updapt-text-area-filled:disabled {\n  border-color: #eaecef;\n  background-color: #eaecef;\n  opacity: 1;\n  pointer-events: none;\n}\n\n.updapt-text-area-not-filled {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  border-radius: 5px;\n  border: 1px solid #dee2e6;\n  font-size: 14px;\n  font-weight: 400;\n  resize: none;\n}\n.updapt-text-area-not-filled:focus {\n  border-color: #2863ff;\n}";
+var css_248z = ".root {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n}\n.root .textarea {\n  resize: none;\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  border-radius: 4px;\n  min-width: 225px;\n  min-height: 107px;\n}\n.root .textarea.error {\n  border: 1px solid #de4841;\n}\n.root .textarea.no-error {\n  border: 1px solid #dee2e6;\n}\n.root .textarea.input-warning {\n  border-color: #c78404;\n}\n.root .textarea:focus {\n  border-color: #2863ff;\n}\n.root .textarea::-moz-placeholder {\n  color: #a0a0a0;\n}\n.root .textarea::placeholder {\n  color: #a0a0a0;\n}\n.root .textarea:disabled {\n  color: #a0a0a0;\n  border-color: #eaecef;\n  background-color: #eaecef;\n  cursor: not-allowed;\n}\n.root .label-error {\n  color: #de4841;\n  font-size: 12px;\n  font-weight: 400;\n}\n.root .label-warning {\n  color: #c78404;\n  font-size: 12px;\n  font-weight: 400;\n}";
 styleInject(css_248z);
 
-function UpdaptTextArea(_a) {
-    var width = _a.width, isError = _a.isError, value = _a.value, rest = __rest(_a, ["width", "isError", "value"]);
-    function isErrorClassName(isError) {
-        if (isError) {
-            return "error";
-        }
-        else {
-            return "no-error";
+function UpdaptTextArea(props) {
+    var isError = props.isError, errorMessage = props.errorMessage, isWarning = props.isWarning; props.warningMessage; var styles = props.styles, rest = __rest(props, ["isError", "errorMessage", "isWarning", "warningMessage", "styles"]);
+    var errorLableProps = {
+        className: "label-error",
+    };
+    function className(isError, isWarning) {
+        switch (true) {
+            case isError:
+                return "error";
+            case isWarning:
+                return "input-warning";
+            default:
+                return "no-error";
         }
     }
-    return (reactExports.createElement(reactExports.Fragment, null,
-        reactExports.createElement("textarea", __assign({ className: value || isError
-                ? "updapt-text-area-filled ".concat(isErrorClassName(isError))
-                : "updapt-text-area-not-filled", style: { width: "".concat(width, "px") }, value: value }, rest))));
+    var textAreaProps = __assign(__assign({ className: "textarea ".concat(className(isError, isWarning)) }, rest), { style: styles === null || styles === void 0 ? void 0 : styles.input });
+    return (React.createElement("div", { className: "root", style: styles === null || styles === void 0 ? void 0 : styles.root },
+        React.createElement("textarea", __assign({}, textAreaProps)),
+        isError && React.createElement("label", __assign({}, errorLableProps), errorMessage)));
 }
 
 exports.UpdaptTextArea = UpdaptTextArea;
