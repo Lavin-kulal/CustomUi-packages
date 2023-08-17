@@ -4,7 +4,9 @@ import images from "./Common/imageVaribale";
 import icons from "./icons/icons";
 
 interface UpdaptSearchProps
-  extends React.AllHTMLAttributes<HTMLInputElement | HTMLFormElement> {
+  extends React.AllHTMLAttributes<
+    HTMLInputElement | HTMLFormElement | HTMLDivElement
+  > {
   styles: {
     root: CSSProperties;
     icon: CSSProperties;
@@ -20,7 +22,7 @@ export function UpdaptSearchInput(props: UpdaptSearchProps) {
     ...rest,
     style: styles?.root,
   };
-  const spanProps: React.HTMLAttributes<HTMLSpanElement> = {
+  const divProps: React.HTMLAttributes<HTMLDivElement> = {
     className: "updapt-input-search-icon",
     ...rest,
     style: styles?.icon,
@@ -34,7 +36,7 @@ export function UpdaptSearchInput(props: UpdaptSearchProps) {
 
   return (
     <form {...formProps}>
-      <span {...spanProps}>{icons.search}</span>
+      <div {...divProps}>{icons.search}</div>
       <input {...inputProps} />
     </form>
   );
