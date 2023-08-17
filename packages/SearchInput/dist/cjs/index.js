@@ -2489,7 +2489,7 @@ styleInject(css_248z);
 
 var images = {
     // searchIcon: require("../../Assets/Images/searchIcon.svg").default,
-    drop: require("../Assets/Images/drop.svg"),
+    drop: require("../Assets/Images/DropDown.svg"),
 };
 
 function UpdaptSearchInput(_a) {
