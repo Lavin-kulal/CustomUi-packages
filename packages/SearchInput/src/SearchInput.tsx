@@ -28,7 +28,7 @@ export function UpdaptSearchInput({
         disabled ? "disabled" : "not-disabled"
       }`}
     >
-      <img className="updapt-input-search-img" src={images.searchIcon} />
+      <img className="updapt-input-search-img" src={images.drop} />
       <input
         type="search"
         className="updapt-search-input"
