@@ -2486,7 +2486,7 @@ var css_248z = ".updapt-form-search-input-cover {\n  display: flex;\n  align-ite
 styleInject(css_248z);
 
 var images = {
-    // searchIcon: require("../../Assets/Images/searchIcon.svg").default,
+    searchIcon: require("../Assets/Images/searchIcon.svg"),
     drop: require("../Assets/Images/DropDown.svg"),
 };
 
@@ -2495,7 +2495,7 @@ function UpdaptSearchInput(_a) {
     return (reactExports.createElement("form", { style: {
             width: "".concat(width, "px"),
         }, className: "updapt-form-search-input-cover ".concat(disabled ? "disabled" : "not-disabled") },
-        reactExports.createElement("img", { className: "updapt-input-search-img", src: images.drop }),
+        reactExports.createElement("img", { className: "updapt-input-search-img", src: images.searchIcon }),
         reactExports.createElement("input", __assign({ type: "search", className: "updapt-search-input", disabled: disabled, value: value }, rest))));
 }
 
