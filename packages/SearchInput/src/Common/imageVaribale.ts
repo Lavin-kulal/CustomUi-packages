@@ -1,5 +1,4 @@
 const images = {
-  // searchIcon: require("../Assets/Images/searchIcon.svg"),
-  // drop: require("../Assets/Images/DropDown.svg"),
+  searchIcon: require("../../Assets/Images/searchIcon.svg"),
 };
 export default images;

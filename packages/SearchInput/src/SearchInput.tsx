@@ -1,6 +1,6 @@
 import * as React from "react";
 import "./styles.css";
-// import images from "./Common/imageVaribale";
+import images from "./Common/imageVaribale";
 
 export type UpdaptSearchProps = Omit<
   React.DetailedHTMLProps<
@@ -28,10 +28,7 @@ export function UpdaptSearchInput({
         disabled ? "disabled" : "not-disabled"
       }`}
     >
-      <img
-        className="updapt-input-search-img"
-        src={`${require("./Assets/Images/searchIcon.svg")}`}
-      />
+      <img className="updapt-input-search-img" src={images.searchIcon} />
       <input
         type="search"
         className="updapt-search-input"
