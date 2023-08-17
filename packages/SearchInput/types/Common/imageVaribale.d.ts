@@ -1,4 +1,4 @@
 declare const images: {
-    drop: any;
+    searchIcon: any;
 };
 export default images;
