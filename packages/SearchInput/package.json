@@ -38,5 +38,5 @@
     "@rollup/plugin-typescript": "^11.1.2",
     "@types/node": "^20.4.8"
   },
-  "gitHead": "fcaa4d3aa315c3daec7bd88713db10b5eb2ce9c6"
+  "gitHead": "8e6af6cb8d0e0c04567a398fed1a29553bf78b41"
 }

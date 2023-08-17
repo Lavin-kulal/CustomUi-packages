@@ -30,5 +30,6 @@
     "rollup-plugin-dts": "^5.3.1",
     "rollup-plugin-postcss": "^4.0.2",
     "text-area-lerna-componentts": "*"
-  }
+  },
+  "gitHead": "8e6af6cb8d0e0c04567a398fed1a29553bf78b41"
 }

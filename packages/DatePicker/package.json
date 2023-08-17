@@ -9,8 +9,16 @@
     "build": "rimraf dist && rollup -c"
   },
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Lavin-kulal/newfolder.git"
+  },
+  "homepage": "git@github.com:Lavin-kulal/newfolder.git",
   "dependencies": {
     "@babel/preset-react": "^7.22.5",
     "@rollup/plugin-babel": "^6.0.3",
@@ -31,5 +39,5 @@
   "devDependencies": {
     "@types/react-datepicker": "^4.15.0"
   },
-  "gitHead": "fcaa4d3aa315c3daec7bd88713db10b5eb2ce9c6"
+  "gitHead": "8e6af6cb8d0e0c04567a398fed1a29553bf78b41"
 }
