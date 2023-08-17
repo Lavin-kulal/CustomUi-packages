@@ -1,11 +1,10 @@
 import nodeResolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import babel from "@rollup/plugin-babel"; // Import the Babel plugin
+import babel from "@rollup/plugin-babel";
 import replace from "@rollup/plugin-replace";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
-
 export default [
   {
     input: "src/index.ts",
@@ -31,7 +30,7 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       babel({
         babelHelpers: "bundled",
-        presets: ["@babel/preset-env", "@babel/preset-react"],
+        presets: ["@babel/preset-react"],
         extensions: [".js"],
       }),
       commonjs(),
