@@ -1,5 +1,2 @@
-declare const images: {
-    searchIcon: any;
-    drop: any;
-};
+declare const images: {};
 export default images;
