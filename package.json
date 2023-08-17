@@ -11,5 +11,8 @@
   "scripts": {
     "build": "lerna run tsc",
     "start": "react-scripts start"
+  },
+  "dependencies": {
+    "@types/node": "^20.5.0"
   }
 }
