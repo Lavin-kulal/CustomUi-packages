@@ -7,10 +7,10 @@ interface UpdaptSearchProps
   extends React.AllHTMLAttributes<
     HTMLInputElement | HTMLFormElement | HTMLDivElement
   > {
-  styles: {
-    root: CSSProperties;
-    icon: CSSProperties;
-    input: CSSProperties;
+  styles?: {
+    root?: CSSProperties;
+    icon?: CSSProperties;
+    input?: CSSProperties;
   };
 }
 export function UpdaptSearchInput(props: UpdaptSearchProps) {
