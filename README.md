@@ -3,21 +3,41 @@
 This repo is a small example of using Lerna 5+.
 This repo contains three packages or projects:
 
-- `updapt-input` (a library of React components)
-- `updapt-button` (a library of React components)
+- `Button` (a library of React components)
+- `Input` (a library of React components)
+- `Search` (a library of React components)
+- `TextArea` (a library of React components)
+- `DatePicker` (a library of React components)
 
 ```
 packages/
-   updapt-input/
+   Button/
         src/
             ...
         package.json
         rollup.config.js
 
-    updapt-button/
+    Input/
         src/
             ...
         package.json
         rollup.config.js
 
+     Search/
+        src/
+            ...
+        package.json
+        rollup.config.js
+
+     TextArea/
+        src/
+            ...
+        package.json
+        rollup.config.js
+
+    DatePicker/
+        src/
+            ...
+        package.json
+        rollup.config.js
 ```
