@@ -2486,7 +2486,7 @@ var css_248z = ".updapt-form-search-input-cover {\n  display: flex;\n  align-ite
 styleInject(css_248z);
 
 var images = {
-    searchIcon: require("../../Assets/Images/searchIcon.svg"),
+    searchIcon: require("../../Assets/Images/searchIcon.svg").default,
 };
 
 function UpdaptSearchInput(_a) {
