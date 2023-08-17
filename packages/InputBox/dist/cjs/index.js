@@ -26,6 +26,14 @@ var __assign = function () {
   };
   return __assign.apply(this, arguments);
 };
+function __rest(s, e) {
+  var t = {};
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+}
 typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
   var e = new Error(message);
   return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
@@ -2481,13 +2489,13 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".root {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n}\n.root .input {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  border-radius: 4px;\n  min-width: 225px;\n  min-height: 20px;\n}\n.root .input.error {\n  border: 1px solid #de4841;\n}\n.root .input.no-error {\n  border: 1px solid #dee2e6;\n}\n.root .input.input-warning {\n  font-size: 12px;\n  font-weight: 400;\n  border-color: #c78404;\n}\n.root .input:focus {\n  border-color: #2863ff;\n}\n.root .input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.root .input::placeholder {\n  color: #a0a0a0;\n}\n.root .input:disabled {\n  color: #a0a0a0;\n  border-color: #eaecef;\n  background-color: #eaecef;\n  cursor: not-allowed;\n}\n.root .textarea {\n  resize: none;\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  border-radius: 4px;\n  min-width: 225px;\n  min-height: 107px;\n}\n.root .textarea.error {\n  border: 1px solid #de4841;\n}\n.root .textarea.no-error {\n  border: 1px solid #dee2e6;\n}\n.root .textarea.input-warning {\n  font-size: 12px;\n  font-weight: 400;\n  border-color: #c78404;\n}\n.root .textarea:focus {\n  border-color: #2863ff;\n}\n.root .textarea::-moz-placeholder {\n  color: #a0a0a0;\n}\n.root .textarea::placeholder {\n  color: #a0a0a0;\n}\n.root .textarea:disabled {\n  color: #a0a0a0;\n  border-color: #eaecef;\n  background-color: #eaecef;\n  cursor: not-allowed;\n}\n.root .required-star-logo::after {\n  content: \"*\";\n  color: #de4841;\n  padding-left: 6px;\n}\n.root .label {\n  color: #0e244a;\n  font-size: 14px;\n  font-weight: 400;\n}\n.root .label-error {\n  color: #de4841;\n  font-size: 12px;\n  font-weight: 400;\n}\n.root .label-warning {\n  color: #c78404;\n  font-size: 12px;\n  font-weight: 400;\n}";
+var css_248z = ".root {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n}\n.root .input {\n  outline: none;\n  padding: 0.5em;\n  color: #0e244a;\n  font-size: 14px;\n  font-weight: 400;\n  border: 1px solid #dee2e6;\n  border-radius: 4px;\n  min-width: 225px;\n  min-height: 20px;\n}\n.root .input.error {\n  border: 1px solid #de4841;\n}\n.root .input.no-error {\n  border: 1px solid #dee2e6;\n}\n.root .input.input-warning {\n  border-color: #c78404;\n}\n.root .input:focus {\n  border-color: #2863ff;\n}\n.root .input::-moz-placeholder {\n  color: #a0a0a0;\n}\n.root .input::placeholder {\n  color: #a0a0a0;\n}\n.root .input:disabled {\n  color: #a0a0a0;\n  border-color: #eaecef;\n  background-color: #eaecef;\n  cursor: not-allowed;\n}\n.root .required-star-logo::after {\n  content: \"*\";\n  color: #de4841;\n  padding-left: 6px;\n}\n.root .label {\n  color: #0e244a;\n  font-size: 14px;\n  font-weight: 400;\n}\n.root .label-error {\n  color: #de4841;\n  font-size: 12px;\n  font-weight: 400;\n}\n.root .label-warning {\n  color: #c78404;\n  font-size: 12px;\n  font-weight: 400;\n}";
 styleInject(css_248z);
 
 function UpdaptInput(props) {
-    var lable = props.lable, requiredStar = props.requiredStar, errorMessage = props.errorMessage; props.multiline; var styles = props.styles, isSensitiveWord = props.isSensitiveWord, sensitiveMessage = props.sensitiveMessage, isError = props.isError;
+    var lable = props.lable, isRequired = props.isRequired, errorMessage = props.errorMessage, styles = props.styles, isWarning = props.isWarning, warningMessage = props.warningMessage, isError = props.isError, rest = __rest(props, ["lable", "isRequired", "errorMessage", "styles", "isWarning", "warningMessage", "isError"]);
     var labelProps = {
-        className: requiredStar ? "required-star-logo" : "label",
+        className: isRequired ? "required-star-logo" : "label",
         style: styles === null || styles === void 0 ? void 0 : styles.label,
     };
     var errorLableProps = {
@@ -2506,14 +2514,13 @@ function UpdaptInput(props) {
                 return "no-error";
         }
     }
-    __assign(__assign({ type: "text", className: "input ".concat(className(isError, isSensitiveWord)) }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
-    var textAreaProps = __assign(__assign({ className: "textarea  ".concat(className(isError, isSensitiveWord)) }, props), { style: styles === null || styles === void 0 ? void 0 : styles.input });
+    var inputProps = __assign(__assign({ type: "text", className: "input ".concat(className(isError, isWarning)) }, rest), { style: styles === null || styles === void 0 ? void 0 : styles.input });
     return (React.createElement(React.Fragment, null,
         React.createElement("div", { className: "root", style: styles === null || styles === void 0 ? void 0 : styles.root },
             lable && React.createElement("label", __assign({}, labelProps), lable),
-            React.createElement("textarea", __assign({}, textAreaProps)),
+            React.createElement("input", __assign({}, inputProps)),
             isError && React.createElement("label", __assign({}, errorLableProps), errorMessage),
-            isSensitiveWord && (React.createElement("label", __assign({}, warningLabelProps), sensitiveMessage)))));
+            isWarning && React.createElement("label", __assign({}, warningLabelProps), warningMessage))));
 }
 
 exports.UpdaptInput = UpdaptInput;

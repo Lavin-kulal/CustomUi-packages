@@ -1,18 +1,17 @@
 import React, { CSSProperties } from "react";
 import "./styles.css";
-interface IUpdaptInputProps extends React.AllHTMLAttributes<HTMLInputElement | HTMLTextAreaElement> {
+interface IUpdaptInputProps extends React.AllHTMLAttributes<HTMLInputElement> {
     lable?: string;
-    requiredStar?: boolean;
-    errorMessage?: string;
-    multiline?: boolean;
+    isRequired?: boolean;
     styles?: {
         root?: CSSProperties;
         label?: CSSProperties;
         input?: CSSProperties;
     };
     isError?: boolean;
-    isSensitiveWord?: boolean;
-    sensitiveMessage?: string;
+    errorMessage?: string;
+    isWarning?: boolean;
+    warningMessage?: string;
 }
 export declare function UpdaptInput(props: IUpdaptInputProps): React.JSX.Element;
 export {};
