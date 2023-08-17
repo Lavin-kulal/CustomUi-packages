@@ -32,6 +32,7 @@ export default [
         babelHelpers: "bundled",
         presets: ["@babel/preset-react"],
         extensions: [".js"],
+        exclude: "node_modules/**",
       }),
       commonjs(),
       replace({
