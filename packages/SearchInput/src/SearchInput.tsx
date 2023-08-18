@@ -28,7 +28,7 @@ export function UpdaptSearchInput(props: UpdaptSearchProps) {
     }
   }
 
-  const parentDivProps: React.FormHTMLAttributes<HTMLDivElement> = {
+  const parentDivProps: React.HTMLAttributes<HTMLDivElement> = {
     className: classNames("form", disabled!),
     ...rest,
     style: styles?.root,
