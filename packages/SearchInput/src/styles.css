@@ -1,6 +1,6 @@
 .updapt-form-search-input-cover {
-  width: auto;
-  height: auto;
+  width: 225px;
+  height: 20px;
   display: flex;
   align-items: center;
   padding: 9px 9px;
@@ -26,8 +26,8 @@
 .updapt-form-search-input-cover .updapt-search-input {
   outline: none;
   border: none;
-  min-width: 225px;
-  min-height: 20px;
+  min-width: 100%;
+  min-height: 100%;
   font-size: 14px;
   font-weight: 400;
   color: #0e244a;
