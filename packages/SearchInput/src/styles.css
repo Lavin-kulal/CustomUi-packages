@@ -26,7 +26,7 @@
 .updapt-form-search-input-cover .updapt-search-input {
   outline: none;
   border: none;
-  min-width: 100%;
+  width: 100%;
   min-height: 100%;
   font-size: 14px;
   font-weight: 400;
