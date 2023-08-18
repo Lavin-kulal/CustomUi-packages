@@ -12,13 +12,27 @@ interface UpdaptSearchProps
     icon?: CSSProperties;
     input?: CSSProperties;
   };
+  disabled?: boolean;
 }
 export function UpdaptSearchInput(props: UpdaptSearchProps) {
-  const { width, disabled, value, styles, ...rest } = props;
+  const { disabled, styles, ...rest } = props;
+
+  function classNames(type: "form" | "input", disabled: boolean) {
+    switch (type) {
+      case "form":
+        return `updapt-form-search-input-cover ${
+          disabled ? "disabled" : "not-disabled"
+        }`;
+
+      case "input":
+        return `updapt-search-input ${disabled ? "disabled" : "not-disabled"}`;
+      default:
+        return "";
+    }
+  }
+
   const formProps: React.FormHTMLAttributes<HTMLFormElement> = {
-    className: `updapt-form-search-input-cover ${
-      disabled ? "disabled" : "not-disabled"
-    }`,
+    className: classNames("form", disabled!),
     ...rest,
     style: styles?.root,
   };
@@ -29,7 +43,7 @@ export function UpdaptSearchInput(props: UpdaptSearchProps) {
   };
   const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
     type: "search",
-    className: `updapt-search-input ${disabled ? "disabled" : "not-disabled"}`,
+    className: classNames("input", disabled!),
     ...rest,
     style: styles?.input,
   };

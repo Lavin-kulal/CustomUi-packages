@@ -6,6 +6,7 @@ interface UpdaptSearchProps extends React.AllHTMLAttributes<HTMLInputElement | H
         icon?: CSSProperties;
         input?: CSSProperties;
     };
+    disabled?: boolean;
 }
 export declare function UpdaptSearchInput(props: UpdaptSearchProps): React.JSX.Element;
 export {};

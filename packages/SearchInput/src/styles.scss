@@ -7,6 +7,7 @@
   border: 1px solid #dee2e6;
   border-radius: 4px;
   gap: 2px;
+  background-color: white;
   &.disabled {
     border-color: #eaecef;
     background-color: #eaecef;
@@ -32,12 +33,15 @@
     &::placeholder {
       color: #a0a0a0;
     }
-    &:disabled {
+    &.disabled {
       background-color: #eaecef;
       color: #a0a0a0;
       pointer-events: none;
       cursor: not-allowed;
       opacity: 1;
+    }
+    &.not-disabled {
+      background-color: white;
     }
   }
 }

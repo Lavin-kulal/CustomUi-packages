@@ -7,6 +7,7 @@
   border: 1px solid #dee2e6;
   border-radius: 4px;
   gap: 2px;
+  background-color: white;
 }
 .updapt-form-search-input-cover.disabled {
   border-color: #eaecef;
@@ -37,12 +38,15 @@
 .updapt-form-search-input-cover .updapt-search-input::placeholder {
   color: #a0a0a0;
 }
-.updapt-form-search-input-cover .updapt-search-input:disabled {
+.updapt-form-search-input-cover .updapt-search-input.disabled {
   background-color: #eaecef;
   color: #a0a0a0;
   pointer-events: none;
   cursor: not-allowed;
   opacity: 1;
+}
+.updapt-form-search-input-cover .updapt-search-input.not-disabled {
+  background-color: white;
 }
 
 .updapt-form-search-input-cover:focus-within {
