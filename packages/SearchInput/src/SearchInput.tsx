@@ -29,7 +29,7 @@ export function UpdaptSearchInput(props: UpdaptSearchProps) {
   };
   const inputProps: React.InputHTMLAttributes<HTMLInputElement> = {
     type: "search",
-    className: "updapt-search-input",
+    className: `updapt-search-input ${disabled ? "disabled" : "not-disabled"}`,
     ...rest,
     style: styles?.input,
   };
