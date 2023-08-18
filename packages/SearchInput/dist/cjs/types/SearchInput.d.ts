@@ -1,6 +1,6 @@
 import React, { CSSProperties } from "react";
 import "./styles.css";
-interface UpdaptSearchProps extends React.AllHTMLAttributes<HTMLInputElement | HTMLFormElement | HTMLDivElement> {
+interface UpdaptSearchProps extends React.AllHTMLAttributes<HTMLInputElement | HTMLDivElement> {
     styles?: {
         root?: CSSProperties;
         icon?: CSSProperties;

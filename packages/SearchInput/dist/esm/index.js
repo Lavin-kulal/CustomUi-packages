@@ -6847,11 +6847,11 @@ function UpdaptSearchInput(props) {
                 return "";
         }
     }
-    var formProps = __assign(__assign({ className: classNames("form", disabled) }, rest), { style: styles === null || styles === void 0 ? void 0 : styles.root });
-    var divProps = __assign(__assign({ className: "updapt-input-search-icon" }, rest), { style: styles === null || styles === void 0 ? void 0 : styles.icon });
+    var parentDivProps = __assign(__assign({ className: classNames("form", disabled) }, rest), { style: styles === null || styles === void 0 ? void 0 : styles.root });
+    var childDivProps = __assign(__assign({ className: "updapt-input-search-icon" }, rest), { style: styles === null || styles === void 0 ? void 0 : styles.icon });
     var inputProps = __assign(__assign({ type: "search", className: classNames("input", disabled) }, rest), { style: styles === null || styles === void 0 ? void 0 : styles.input });
-    return (React.createElement("form", __assign({}, formProps),
-        React.createElement("div", __assign({}, divProps), icons.search),
+    return (React.createElement("div", __assign({}, parentDivProps),
+        React.createElement("div", __assign({}, childDivProps), icons.search),
         React.createElement("input", __assign({}, inputProps))));
 }
 

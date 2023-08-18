@@ -1,12 +1,9 @@
 import React, { CSSProperties } from "react";
 import "./styles.css";
-import images from "./Common/imageVaribale";
 import icons from "./icons/icons";
 
 interface UpdaptSearchProps
-  extends React.AllHTMLAttributes<
-    HTMLInputElement | HTMLFormElement | HTMLDivElement
-  > {
+  extends React.AllHTMLAttributes<HTMLInputElement | HTMLDivElement> {
   styles?: {
     root?: CSSProperties;
     icon?: CSSProperties;
@@ -31,12 +28,12 @@ export function UpdaptSearchInput(props: UpdaptSearchProps) {
     }
   }
 
-  const formProps: React.FormHTMLAttributes<HTMLFormElement> = {
+  const parentDivProps: React.FormHTMLAttributes<HTMLDivElement> = {
     className: classNames("form", disabled!),
     ...rest,
     style: styles?.root,
   };
-  const divProps: React.HTMLAttributes<HTMLDivElement> = {
+  const childDivProps: React.HTMLAttributes<HTMLDivElement> = {
     className: "updapt-input-search-icon",
     ...rest,
     style: styles?.icon,
@@ -49,9 +46,9 @@ export function UpdaptSearchInput(props: UpdaptSearchProps) {
   };
 
   return (
-    <form {...formProps}>
-      <div {...divProps}>{icons.search}</div>
+    <div {...parentDivProps}>
+      <div {...childDivProps}>{icons.search}</div>
       <input {...inputProps} />
-    </form>
+    </div>
   );
 }
